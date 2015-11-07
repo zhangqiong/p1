@@ -1,0 +1,90 @@
+*{
+    margin:0;
+}
+body{
+    color: white;
+    width:100%;
+    background-color:#53a4aa;
+}
+#top{
+    background-color: #22292C;
+    height:50px;
+    width:100%;
+    line-height: 50px;
+}
+#top-left{
+    margin-left: 2.3%;
+    float:left;
+    width: 25%;
+}
+#top-left *{
+    float:left;
+    line-height: 50px;
+}
+#top-left img{
+
+    margin-right: 9%;
+    height:30px;
+    margin-top:10px;
+}
+#top-middle{
+    float:left;
+    width:45.4%;
+    text-align: center;
+    font-size: 1.5em;
+    margin:auto;
+}
+#top-right{
+    float:right;
+    width: 25%;
+    margin-right: 2.3%;
+}
+#top-right img{
+    float:right;
+    margin-top: 20px;
+}
+#container{
+    width: 100%;
+}
+#left{
+    display: block;
+    margin-left: 4.7%;
+    margin-top: 10px;
+    width:50px;
+}
+#logo{
+    display: block;
+    width: 29.7%;
+    max-width: 230px;
+    margin:auto;
+    margin-top:30px;
+    margin-bottom: 50px;
+}
+#introduce{
+    margin: auto;
+    margin-bottom:70px;
+    max-width: 70.3%;
+    text-align: center;
+}
+#introduce p{
+
+}
+#peo{
+    float:left;
+    width: 25%;
+    margin-left: 15.6%;
+    text-align: center;
+}
+#logo2{
+    float:left;
+    width: 25%;
+    margin-left: 19%;
+    text-align: center;
+}
+#peo img,
+#logo2 img{
+    display: block;
+    width:45%;
+    max-width: 90px;
+    margin: auto;
+}
