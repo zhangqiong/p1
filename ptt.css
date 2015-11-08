@@ -8,9 +8,7 @@ body{
 }
 #top{
     background-color: #22292C;
-    height:50px;
     width:100%;
-    line-height: 50px;
 }
 #top-left{
     margin-left: 2.3%;
@@ -19,19 +17,15 @@ body{
 }
 #top-left *{
     float:left;
-    line-height: 50px;
 }
 #top-left img{
-
     margin-right: 9%;
-    height:30px;
-    margin-top:10px;
 }
 #top-middle{
     float:left;
     width:45.4%;
     text-align: center;
-    font-size: 1.5em;
+
     margin:auto;
 }
 #top-right{
@@ -41,7 +35,7 @@ body{
 }
 #top-right img{
     float:right;
-    margin-top: 20px;
+
 }
 #container{
     width: 100%;
@@ -49,21 +43,17 @@ body{
 #left{
     display: block;
     margin-left: 4.7%;
-    margin-top: 10px;
-    width:50px;
+
 }
 #logo{
     display: block;
     width: 29.7%;
-    max-width: 230px;
     margin:auto;
-    margin-top:30px;
-    margin-bottom: 50px;
 }
 #introduce{
     margin: auto;
-    margin-bottom:70px;
-    max-width: 70.3%;
+
+    max-width: 67%;
     text-align: center;
 }
 #introduce p{
@@ -85,6 +75,97 @@ body{
 #logo2 img{
     display: block;
     width:45%;
-    max-width: 90px;
+    /*max-width: 90px;*/
     margin: auto;
 }
+
+
+/*手机端*/
+@media screen and (max-device-aspect-ratio: 1/1){
+    body{
+        font-size:3.9vw;
+    }
+    #top{
+        height:14vw;
+        line-height: 14vw;
+    }
+    #top-left *{
+        line-height: 14vw;
+    }
+    #top-left img{
+        height:6.25vw;
+        margin-top:3.17vw;
+    }
+    #top-middle{
+        font-size: 5.4vw;
+    }
+    #top-right img{
+        width: 5.4vw;
+        margin-top: 6.25vw;
+    }
+    #left{
+        margin-top: 3.1vw;
+        width:8.5vw;
+    }
+    #logo{
+        max-width: 27.3vw;
+        margin-top:6.25vw;
+        margin-bottom: 18.75vw;
+
+    }
+    #introduce{
+        line-height: 8.5vw;
+        text-align: left;
+        font-size: 4.6vw;
+        margin-bottom:27.3vw;
+    }
+    #peo img,
+    #logo2 img{
+        display: block;
+        width:45%;
+
+        margin: auto;
+    }
+}
+
+/*电脑端*/
+@media screen and (min-device-aspect-ratio:1/1 ){
+    #top{
+        height:50px;
+        line-height: 50px;
+    }
+    #top-left *{
+        line-height: 50px;
+    }
+    #top-left img{
+        height:30px;
+        margin-top:10px;
+    }
+    #top-middle{
+        font-size: 1.5em;
+    }
+    #top-right img{
+        margin-top: 20px;
+    }
+    #left{
+        margin-top: 10px;
+        width:50px;
+    }
+    #logo{
+        max-width: 230px;
+        margin-top:30px;
+        margin-bottom: 50px;
+
+    }
+    #introduce{
+        margin-bottom:70px;
+    }
+    #peo img,
+    #logo2 img{
+        display: block;
+        width:45%;
+        max-width: 90px;
+        margin: auto;
+    }
+}
+
