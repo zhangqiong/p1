@@ -113,6 +113,7 @@ body{
     margin:auto;
 }
 .log h4{
+    margin-top: 1vmin;
     margin-bottom: 3vmin;
     color:#515151;
 }
