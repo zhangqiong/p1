@@ -73,20 +73,18 @@ body{
     margin-bottom: 3.9vmin;
 }
 #result-detail li{
-    width:33vmin;
+    width:26vmin;
     /*margin-right: 1.92vmin;*/
     list-style-type: none;
     float:left ;
 }
 #result-detail li div{
-    width:50vmin;
+    width:13vmin;
     /*display: inline;*/
     float:left ;
     text-align: justify;
 }
-#result-detail li .bor{
-    margin:0;
-}
+
 #result-detail p{
     clear: both;
 }
@@ -104,10 +102,8 @@ body{
     font-size: 4.2vmin;
 
 }
-.log h4{
 
-    color:#515151;
-}
+
 .log p{
     color:#a6a6a6;
 }
@@ -115,6 +111,17 @@ body{
 .log p{
     width:78.1vmin;
     margin:auto;
+}
+.log h4{
+    margin-bottom: 3vmin;
+    color:#515151;
+}
+.log .time{
+    font-size: 3.8vmin;
+    color: #c7c7c7;
+    width:26vmin;
+    float:right;
+    margin-right: 9vmin;
 }
 #footer{
     position: fixed;
