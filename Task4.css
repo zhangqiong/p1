@@ -4,13 +4,17 @@
 
 }
 body{
-    width:100%;
+
+}
+#container{
+    width:100vmin;
+    margin:auto;
     background-color: #29bde0;
 }
 #top{
-    width:100%;
-    height:14.8vw;
-    line-height: 14.8vw;
+    width:100vmin;
+    height:14.8vmin;
+    line-height: 14.8vmin;
     border-bottom-style: solid;
     border-bottom-color: #74d4eb;
     border-bottom-width: 1px;
@@ -18,16 +22,16 @@ body{
 #home{
     /*display: block;*/
     float: left;
-    width:7.8%;
-    margin-top: 4.7vw;
-    margin-left: 3.1vw;
+    width:7.8vmin;
+    margin-top: 4.7vmin;
+    margin-left: 3.1vmin;
 }
 #title{
     display: block;
     /*float: left;*/
-    font-size: 5vw;
+    font-size: 5vmin;
     color: white;
-    width:22%;
+    width:22vmin;
     margin:auto;
     text-align: center;
     /*border:solid;*/
@@ -36,46 +40,46 @@ body{
 #help{
     /*display: block;*/
     float:right;
-    width:6.3%;
-    margin-top:4.7vw;
-    margin-right: 3.1vw;
+    width:6.3vmin;
+    margin-top:4.7vmin;
+    margin-right: 3.1vmin;
 }
 #result-pic{
     /*background: url(images/win.png);*/
     display: block;
-    width:54.7%;
-    height:32.8vw;
+    width:54.7vmin;
+    height:32.8vmin;
     margin:auto;
-    margin-top: 3.9vw;
-    margin-bottom: 2.3vw;
+    margin-top: 3.9vmin;
+    margin-bottom: 2.3vmin;
 }
 #result-text{
-    width:78.1%;
-    line-height: 6vw;
+    width:78.1vmin;
+    line-height: 6vmin;
     margin:auto;
     text-align: justify;
     font-family:微软雅黑;
-    font-size: 4.9vw;
+    font-size: 4.9vmin;
     font-weight: 900;
     color: #ffc865;
-    margin-bottom: 9.3vw;
+    margin-bottom: 9.3vmin;
 }
 #result-detail{
-    width:78.1%;
-    line-height: 5.5vw;
+    width:78.1vmin;
+    line-height: 5.5vmin;
     margin:auto;
-    font-size: 3.8vw;
+    font-size: 3.8vmin;
     color: white;
-    margin-bottom: 3.9vw;
+    margin-bottom: 3.9vmin;
 }
 #result-detail li{
-    width:33%;
-    /*margin-right: 1.92%;*/
+    width:33vmin;
+    /*margin-right: 1.92vmin;*/
     list-style-type: none;
     float:left ;
 }
 #result-detail li div{
-    width:50%;
+    width:50vmin;
     /*display: inline;*/
     float:left ;
     text-align: justify;
@@ -87,17 +91,17 @@ body{
     clear: both;
 }
 #logs{
-    width:100%;
+    width:100vmin;
     margin:auto;
     background: white;
 }
 .log{
-    width:100%;
-    height:25.78vw;
+    width:100vmin;
+    height:25.78vmin;
     border-style: solid none;
     border-width: thin;
     border-color: #dddddd;
-    font-size: 4.2vw;
+    font-size: 4.2vmin;
 
 }
 .log h4{
@@ -109,25 +113,25 @@ body{
 }
 .log h4,
 .log p{
-    width:78.1%;
+    width:78.1vmin;
     margin:auto;
 }
 #footer{
     position: fixed;
     bottom: 0;
-    height:20vw;
-    width: 100%;
+    height:20vmin;
+    width: 100vmin;
     background-color: rgba(41,189,224,0.5);
 }
 #footer button{
     float:left;
-    width:42.1%;
-    height:13vw;
-    margin: 3.9%;
+    width:42.1vmin;
+    height:13vmin;
+    margin: 3.9vmin;
     color: white;
     border-style: none;
-    border-radius:1vw;
-    font-size: 6vw;
+    border-radius:1vmin;
+    font-size: 6vmin;
 }
 #footer #again{
     background-color: #f66f6f;
