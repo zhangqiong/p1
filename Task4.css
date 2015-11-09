@@ -40,7 +40,7 @@ body{
     margin-top:4.7vw;
     margin-right: 3.1vw;
 }
-#result-p{
+#result-pic{
     /*background: url(images/win.png);*/
     display: block;
     width:54.7%;
@@ -49,7 +49,7 @@ body{
     margin-top: 3.9vw;
     margin-bottom: 2.3vw;
 }
-#result-t{
+#result-text{
     width:78.1%;
     line-height: 6vw;
     margin:auto;
@@ -86,12 +86,12 @@ body{
 #result-detail p{
     clear: both;
 }
-#details{
+#logs{
     width:100%;
     margin:auto;
     background: white;
 }
-.detail{
+.log{
     width:100%;
     height:25.78vw;
     border-style: solid none;
@@ -100,20 +100,20 @@ body{
     font-size: 4.2vw;
 
 }
-.detail h4{
+.log h4{
 
-    color:black;
+    color:#515151;
 }
-.detail p{
+.log p{
     color:#a6a6a6;
 }
-.detail h4,
-.detail p{
+.log h4,
+.log p{
     width:78.1%;
     margin:auto;
 }
 #footer{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     height:20vw;
     width: 100%;
