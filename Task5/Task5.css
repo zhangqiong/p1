@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0;
+    /*border:solid;*/
+}
+body{
+    background-color: #f0f0f0;
+}
+.menu{
+    width:77vmin;
+    position: fixed;
+}
+.menu li{
+    list-style-type: none;
+    height: 12.8vmin;
+    line-height: 12.8vmin;
+    border-bottom: solid thin #d6d6d6;
+    color: #29bde0;
+}
+.menu li img{
+    display: block;
+    height:6.25vmin;
+    margin-top: 3vmin;
+}
+.menu .icon{
+    float:left;
+    margin-left: 5vmin;
+    margin-right: 5vmin;
+}
+.menu .go{
+    float:right;
+    margin-right: 8vmin;
+}
+.container{
+    position: absolute;
+    top:0;
+    left: 0;
+    width:100vmin;
+    background-color: #f0f0f0;
+}
+.showMenu{
+    cursor:pointer;
+}
+.top{
+    width:100vmin;
+    height:14.8vmin;
+    line-height: 14.8vmin;
+    background-color: #29bde0;
+}
+.top img{
+    margin-left: 3%;
+    width:5.46%;
+    margin-top: 6.25%;
+}
+.main{
+    width:89%;
+    margin:auto;
+    margin-top: 4.68vmin;
+}
+.record,
+.degree-cho{
+    background-color: white;
+}
+.record{
+    width: 100%;
+    height:17vmin;
+    line-height: 17vmin;
+    color: #9a9a9a;
+    font-size: 5vmin;
+    text-align: center;
+    margin-bottom: 4.68vmin;
+}
+.record img{
+    width:3.75vmin;
+    float: right;
+    margin-right: 2.458vmin;
+    margin-top: 6vmin;
+}
+.degree-cho .title{
+    width:100%;
+    height:14vmin;
+    line-height: 14vmin;
+    color: #fbb435;
+    font-size: 5.3vmin;
+    text-align: center;
+    border-bottom: thin solid #fde1ae;
+}
+.degree-cho #next{
+    position: absolute;
+    right: 0;
+    margin-right: 7vmin;
+    margin-top: 44vmin;
+    width:4.1vmin;
+}
+.degree-cho button{
+    display: block;
+    margin:auto;
+    margin-top: 4.68vmin;
+    width: 80.75%;
+    height: 21.1vmin;
+    border: none;
+    background-color: #69d1e9;
+    color: white;
+    font-size: 5.47vmin;
+}
+.degree-cho p{
+    font-size: 3.9vmin;
+    text-align: center;
+    height: 4vmin;
+    color: #9a9a9a;
+    margin-top: 4vmin;
+}
+.point{
+    font-size: 0;
+    height:4vmin;
+    width:14vmin;
+    margin: 3vmin auto;
+}
+.point img{
+    margin-left: 1vmin;
+    width: 2.5vmin;
+    height:2.5vmin;
+}

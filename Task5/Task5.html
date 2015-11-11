@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cmn-Hans">
+    <meta http-equiv="x-ua-compatible" content="IE-Edge">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Task5.css">
+    <title>捉鬼游戏</title>
+</head>
+<body>
+<div class="menu" onblur="closeMenu()">
+    <ul>
+        <li>
+            <img class="icon" src="images/announcement.png">
+            公告
+            <img class="go" src="images/go-blue.png">
+        </li>
+        <li>
+            <img class="icon" src="images/setting.png">
+            设置
+            <img class="go"src="images/go-blue.png">
+        </li>
+        <li>
+            <img class="icon" src="images/help.png">
+            帮助
+            <img class="go"src="images/go-blue.png">
+        </li>
+        <li>
+            <img class="icon" src="images/about.png">
+            关于
+            <img class="go"src="images/go-blue.png">
+        </li>
+    </ul>
+</div>
+<div class="container" >
+    <div class="top">
+        <img class="showMenu" src="images/menu.png" onclick="showMenu()">
+    </div>
+    <div class="main">
+        <div class="record">
+            上次游戏：捉鬼猜词版
+            <img src="images/go.png">
+        </div>
+        <div class="degree-cho">
+            <div class="title">
+                捉鬼游戏
+            </div>
+            <img id="next" src="images/next.png">
+            <div class="divider">
+                <button>简化版</button>
+                <p>有1133个用户正在玩此款游戏</p>
+                <button>猜词版</button>
+                <p>有1133个用户正在玩此款游戏</p>
+                <button>白痴版</button>
+                <p>有1133个用户正在玩此款游戏</p>
+            </div>
+            <div class="point">
+                <img src="images/point_selected.png">
+                <img src="images/point.png">
+                <img src="images/point.png">
+                <img src="images/point.png">
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+<script src="Task5.js"></script>
+
+</body>
+</html>
