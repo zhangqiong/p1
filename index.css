@@ -1,6 +1,10 @@
 *{
     padding:0px;
     margin:0px;
+    font-size: 8vw;
+}
+a{
+    display: block;
 }
 body,html{
     width:100%;
