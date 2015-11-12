@@ -6,31 +6,28 @@
 body{
 
 }
-#container{
+.container{
     width:100vmin;
     margin:auto;
     background-color: #29bde0;
 }
 
 /*顶部*/
-#top{
+.top{
     width:100vmin;
     height:14.8vmin;
     line-height: 14.8vmin;
-    border-bottom-style: solid;
-    border-bottom-color: #74d4eb;
-    border-bottom-width: 1px;
+    border-bottom: solid #74d4eb 1px ;
+
 }
-#home{
+.pic-l{
     /*display: block;*/
     float: left;
     width:7.8vmin;
     margin-top: 4.7vmin;
     margin-left: 3.1vmin;
 }
-#title{
-    display: block;
-    /*float: left;*/
+.top .title{
     font-size: 5vmin;
     color: white;
     width:22vmin;
@@ -39,7 +36,7 @@ body{
     /*border:solid;*/
 
 }
-#help{
+.pic-r{
     /*display: block;*/
     float:right;
     width:6.3vmin;

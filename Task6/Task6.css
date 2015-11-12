@@ -1,0 +1,34 @@
+/*顶部*/
+.top{
+    width:100vmin;
+    height:14.8vmin;
+    line-height: 14.8vmin;
+    border-bottom-style: solid;
+    border-bottom-color: #74d4eb;
+    border-bottom-width: 1px;
+}
+.pic-l{
+    /*display: block;*/
+    float: left;
+    width:7.8vmin;
+    margin-top: 4.7vmin;
+    margin-left: 3.1vmin;
+}
+#title{
+    display: block;
+    /*float: left;*/
+    font-size: 5vmin;
+    color: white;
+    width:22vmin;
+    margin:auto;
+    text-align: center;
+    /*border:solid;*/
+
+}
+.pic-r{
+    /*display: block;*/
+    float:right;
+    width:6.3vmin;
+    margin-top:4.7vmin;
+    margin-right: 3.1vmin;
+}
