@@ -7,19 +7,29 @@
 
 body{
     background-color: white;
+
 }
+
+/*最外面的块*/
 .wrap{
+
     position: absolute;
     width: 100vmin;
+    /*height: 50vmin;*/
     margin: auto;
-    height: 100vmax;
-    overflow-x:hidden;
+    /*height: 166vmin;*/
+    /*overflow-x:hidden;*/
+    /*不懂x与y的互相影响*/
+    /*overflow-y: visible;*/
 }
+
+/*菜单*/
 .menu{
 
     background-color: white;
     width:77vmin;
     position: fixed;
+    left: -77vmin;
     font-size: 5vmin;
     /*animation-name: showMenu-menu;*/
     /*animation-duration: 1s;*/
@@ -47,10 +57,15 @@ body{
     float:right;
     margin-right: 8vmin;
 }
+
+/*主界面*/
+
+/*主界面的块*/
 .container{
     /*animation-name: showMenu-container;*/
     /*animation-duration: 1s;*/
     /*animation-fill-mode:forwards;*/
+    box-shadow: -3vmin 0 3vmin rgba(0,0,0,0.1);
     position: absolute;
     top:0;
     left: 0;
@@ -58,9 +73,13 @@ body{
 
     background-color: #f0f0f0;
 }
+
+/*菜单显示按钮*/
 .showMenu{
     cursor:pointer;
 }
+
+/*顶部栏*/
 .top{
     width:100vmin;
     height:14.8vmin;
@@ -72,6 +91,8 @@ body{
     width:5.46%;
     margin-top: 6.25%;
 }
+
+/*除顶部外的主体*/
 .main{
     width:89%;
     margin:auto;
@@ -81,6 +102,8 @@ body{
 .degree-cho{
     background-color: white;
 }
+
+/*上次游戏记录块*/
 .record{
     width: 100%;
     height:17vmin;
@@ -96,6 +119,8 @@ body{
     margin-right: 2.458vmin;
     margin-top: 6vmin;
 }
+
+/*难度选择块的标题栏*/
 .degree-cho .title{
     width:100%;
     height:14vmin;
@@ -105,6 +130,8 @@ body{
     text-align: center;
     border-bottom: thin solid #fde1ae;
 }
+
+/*黄色下一页按钮*/
 .degree-cho #next{
     position: absolute;
     right: 0;
@@ -112,6 +139,8 @@ body{
     margin-top: 44vmin;
     width:4.1vmin;
 }
+
+/*难度选择的按钮*/
 .degree-cho button{
     display: block;
     margin:auto;
@@ -130,6 +159,8 @@ body{
     color: #9a9a9a;
     margin-top: 4vmin;
 }
+
+/*底部小点*/
 .point{
     font-size: 0;
     height:4vmin;
@@ -141,6 +172,8 @@ body{
     width: 2.5vmin;
     height:2.5vmin;
 }
+
+/*菜单划出与隐藏的动画*/
 @keyframes showMenu-container {
     from{left:0;}
     to{left:77vmin;}

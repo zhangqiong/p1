@@ -3,13 +3,16 @@
 <head lang="zh-cmn-Hans">
     <meta http-equiv="x-ua-compatible" content="IE=Edge">
     <meta charset="UTF-8">
-    <meta name="viewport" content="user-scalable=no, width=device-width" />
+    <!--<meta name="viewport" content="user-scalable=no, width=device-width" />-->
+    <!--不知道为啥下面会空一块-->
     <meta name="description" content="" />
     <link rel="stylesheet" href="Task5.css">
     <title>捉鬼游戏</title>
 </head>
 <body>
 <div class="wrap">
+
+    <!--菜单-->
     <div class="menu" onblur="closeMenu()">
         <ul>
             <li>
@@ -34,13 +37,19 @@
             </li>
         </ul>
     </div>
+
+    <!--主界面-->
     <div class="container" >
+
+        <!--顶部-->
         <div class="top">
             <img class="showMenu" src="images/menu.png" onclick="showMenu()">
         </div>
         <div class="main">
             <div class="record">
                 上次游戏：捉鬼猜词版
+
+                <!--黄色下一页按钮-->
                 <img src="images/go.png">
             </div>
             <div class="degree-cho">
@@ -56,6 +65,8 @@
                     <button>白痴版</button>
                     <p>有1133个用户正在玩此款游戏</p>
                 </div>
+
+                <!--点-->
                 <div class="point">
                     <img src="images/point_selected.png">
                     <img src="images/point.png">
