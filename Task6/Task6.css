@@ -4,12 +4,13 @@
 
 }
 body{
-
+    /*background-color: #29bde0;*/
 }
 .container{
     width:100vmin;
     margin:auto;
     background-color: #29bde0;
+    overflow-x: hidden;
 }
 
 /*顶部*/
@@ -45,11 +46,11 @@ body{
     margin-right: 3.1%;
 }
 .bubble{
-    width: 100%;
+    width: 92%;
     height:13.5vmin;
     background-color: rgba(255,255,255,0.7);
-    line-height: 14vmin;
-    padding:0  8vmin;
+    line-height: 13.5vmin;
+    padding-left:8vmin;
     color: gray;
     font-size: 4vmin;
 }
@@ -60,9 +61,58 @@ body{
 }
 .bubble .triangle{
     position: relative;
+    left:4vmin;
     /*bottom: -8vmin;*/
     /*left:10vmin;*/
-    width:3vmin;
-    height:8vmin;
-    border:solid red 8vmin;
+    width: 0;
+    height: 0;
+    border-right: solid 1.5vmin transparent;
+    border-left: 1.5vmin solid transparent;
+    border-top:solid 2vmin rgba(255,255,255,0.7);
+    /*border-left: 50px solid transparent;*/
+
+    /*border-right: 50px solid transparent;*/
+
+    /*border-top: 100px solid red;*/
 }
+.prompt{
+    color: white;
+    padding-left:11vmin;
+    font-size: 4vmin;
+    line-height: 12vmin;
+}
+.vote li{
+    list-style-type: none;
+    float:left;
+    width:18vmin;
+    height: 20vmin;
+    margin:6vmin;
+    border: solid white 2px;
+}
+
+.cleaner{
+    clear: both;
+}
+footer{
+    background-color: #29bde0;
+    position: fixed;
+    bottom: 0vmin;
+    width:100vmin;
+    height:27vmin;
+    border-top: solid white 1px;
+    /*background-color: white;*/
+}
+footer button{
+    display: block;
+    height:14vmin;
+    width: 80vmin;
+    margin: auto;
+    margin-top: 6vmin;
+    border: none;
+    background-color: #fbb435;
+    color: white;
+    font-size: 6vmin;
+
+}
+
+
