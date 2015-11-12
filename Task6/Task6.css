@@ -1,20 +1,32 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+body{
+
+}
+.container{
+    width:100vmin;
+    margin:auto;
+    background-color: #29bde0;
+}
+
 /*顶部*/
 .top{
-    width:100vmin;
+    width:100%;
     height:14.8vmin;
     line-height: 14.8vmin;
-    border-bottom-style: solid;
-    border-bottom-color: #74d4eb;
-    border-bottom-width: 1px;
+
 }
 .pic-l{
     /*display: block;*/
     float: left;
-    width:7.8vmin;
-    margin-top: 4.7vmin;
-    margin-left: 3.1vmin;
+    width:7.8%;
+    margin-top: 3.4vmin;
+    margin-left: 3.1%;
 }
-#title{
+.top .title{
     display: block;
     /*float: left;*/
     font-size: 5vmin;
@@ -28,7 +40,29 @@
 .pic-r{
     /*display: block;*/
     float:right;
-    width:6.3vmin;
+    width:6.3%;
     margin-top:4.7vmin;
-    margin-right: 3.1vmin;
+    margin-right: 3.1%;
+}
+.bubble{
+    width: 100%;
+    height:13.5vmin;
+    background-color: rgba(255,255,255,0.7);
+    line-height: 14vmin;
+    padding:0  8vmin;
+    color: gray;
+    font-size: 4vmin;
+}
+.bubble img{
+    width:8vmin;
+    margin:3vmin 11vmin;
+    float:right;
+}
+.bubble .triangle{
+    position: relative;
+    /*bottom: -8vmin;*/
+    /*left:10vmin;*/
+    width:3vmin;
+    height:8vmin;
+    border:solid red 8vmin;
 }

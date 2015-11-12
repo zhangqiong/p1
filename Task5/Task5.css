@@ -190,3 +190,54 @@ body{
     from{left:0;}
     to{left:-77vmin;}
 }
+/*firefox*/
+@-moz-keyframes showMenu-container {
+    from{left:0;}
+    to{left:77vmin;}
+}
+@-moz-keyframes showMenu-menu {
+    from{left:-77vmin;}
+    to{left:0;}
+}
+@-moz-keyframes hideMenu-container {
+    from{left:77vmin;}
+    to{left:0;}
+}
+@-moz-keyframes hideMenu-menu {
+    from{left:0;}
+    to{left:-77vmin;}
+}
+/*safari chrome*/
+@-webkit-keyframes showMenu-container {
+    from{left:0;}
+    to{left:77vmin;}
+}
+@-webkit-keyframes showMenu-menu {
+    from{left:-77vmin;}
+    to{left:0;}
+}
+@-webkit-keyframes hideMenu-container {
+    from{left:77vmin;}
+    to{left:0;}
+}
+@-webkit-keyframes hideMenu-menu {
+    from{left:0;}
+    to{left:-77vmin;}
+}
+/*opera*/
+@-o-keyframes showMenu-container {
+    from{left:0;}
+    to{left:77vmin;}
+}
+@-o-keyframes showMenu-menu {
+    from{left:-77vmin;}
+    to{left:0;}
+}
+@-o-keyframes hideMenu-container {
+    from{left:77vmin;}
+    to{left:0;}
+}
+@-o-keyframes hideMenu-menu {
+    from{left:0;}
+    to{left:-77vmin;}
+}
