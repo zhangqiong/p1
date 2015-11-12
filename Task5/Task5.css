@@ -15,10 +15,10 @@ body{
 
     position: absolute;
     width: 100vmin;
-    /*height: 50vmin;*/
+    height: 100vh;
     margin: auto;
     /*height: 166vmin;*/
-    /*overflow-x:hidden;*/
+    overflow-x:hidden;
     /*不懂x与y的互相影响*/
     /*overflow-y: visible;*/
 }
