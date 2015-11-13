@@ -6,6 +6,7 @@
 body{
     /*background-color: #29bde0;*/
 }
+/*整个页面*/
 .container{
     width:100vmin;
     margin:auto;
@@ -45,13 +46,15 @@ body{
     margin-top:4.7vmin;
     margin-right: 3.1%;
 }
+
+/*气泡*/
 .bubble{
     width: 92%;
     height:13.5vmin;
     background-color: rgba(255,255,255,0.7);
     line-height: 13.5vmin;
     padding-left:8vmin;
-    color: gray;
+    color: #464646;
     font-size: 4vmin;
 }
 .bubble img{
@@ -59,6 +62,7 @@ body{
     margin:3vmin 11vmin;
     float:right;
 }
+/*气泡的三角*/
 .bubble .triangle{
     position: relative;
     left:4vmin;
@@ -75,24 +79,55 @@ body{
 
     /*border-top: 100px solid red;*/
 }
+
+/*气泡下的提示*/
 .prompt{
-    color: white;
+    color: #c9eef7;
     padding-left:11vmin;
-    font-size: 4vmin;
+    font-size: 3.5vmin;
     line-height: 12vmin;
 }
+
+/*投票*/
 .vote li{
     list-style-type: none;
     float:left;
     width:18vmin;
     height: 20vmin;
-    margin:6vmin;
+    margin:3vmin 7vmin 9vmin;
     border: solid white 2px;
 }
+/*头像*/
+.vote .logo{
+    whith:100%;
+    height:15vmin;
+    line-height: 15vmin;
+    text-align: center;
+    font-size: 5vmin;
+    color: #565656;
+    background-color: #f5c97b;
+}
+/*编号*/
+.vote .no{
+    width: 100%;
+    height: 5vmin;
+    line-height: 5vmin;
+    background-color: #83b09a;
 
+    text-align: center;
+    color: white;
+    font-size: 3.6vmin;
+    font-weight: 900;
+}
+
+/*最下面清除浮动*/
 .cleaner{
     clear: both;
+    width:100%;
+    height:27vmin;
 }
+
+/*底部按钮*/
 footer{
     background-color: #29bde0;
     position: fixed;

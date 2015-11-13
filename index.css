@@ -1,10 +1,11 @@
 *{
     padding:0px;
     margin:0px;
-    font-size: 8vw;
+    font-size: 8vmin;
 }
 a{
-    display: block;
+    /*display: block;*/
+    /*width:30vmin;*/
 }
 body,html{
     width:100%;
