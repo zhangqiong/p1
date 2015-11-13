@@ -62,6 +62,11 @@ body{
     margin:3vmin 11vmin;
     float:right;
 }
+/*气泡的播放按钮*/
+.bubble #song{
+    width: 20px;
+    height: 20px;
+}
 /*气泡的三角*/
 .bubble .triangle{
     position: relative;
@@ -92,10 +97,10 @@ body{
 .vote li{
     list-style-type: none;
     float:left;
-    width:18vmin;
+    width: 19.5vmin;
     height: 20vmin;
-    margin:3vmin 7vmin 9vmin;
-    border: solid white 2px;
+    margin:3vmin 6vmin 9vmin;
+    border: solid white 0.9vmin;
 }
 /*头像*/
 .vote .logo{
@@ -134,7 +139,7 @@ footer{
     bottom: 0;
     width:100vmin;
     height:27vmin;
-    border-top: solid white 1px;
+    border-top: solid white 0.2vmin;
     /*background-color: white;*/
 }
 footer button{
