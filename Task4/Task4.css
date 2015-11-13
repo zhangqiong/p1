@@ -50,9 +50,7 @@ body{
     display: block;
     width:54.7vmin;
     height:32.8vmin;
-    margin:auto;
-    margin-top: 3.9vmin;
-    margin-bottom: 2.3vmin;
+    margin:auto 3.9vmin 2.3vmin;
 }
 
 /*结果的话*/
@@ -60,12 +58,12 @@ body{
     width:78.1vmin;
     line-height: 6vmin;
     margin:auto;
+    margin-bottom: 9.3vmin;
     text-align: justify;
-    font-family:微软雅黑;
     font-size: 4.9vmin;
     font-weight: 900;
     color: #ffc865;
-    margin-bottom: 9.3vmin;
+
 }
 
 /*结果的详细信息：角色*/
@@ -73,9 +71,10 @@ body{
     width:78.1vmin;
     line-height: 5.5vmin;
     margin:auto;
+    margin-bottom: 3.9vmin;
     font-size: 3.8vmin;
     color: white;
-    margin-bottom: 3.9vmin;
+
 }
 #result-detail li{
     width:26vmin;
