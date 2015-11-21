@@ -16,8 +16,8 @@
         </div>
         <div class="bubble">
             发言讨论结束，大家请投票
-            <!--<img src="images/play.png">-->
-            <audio id="song"  src="http://nb.cache.baidupcs.com/file/b5ebd4fa7879a3d77305de1fb2d5eedc?bkt=p2-qd-536&xcode=75e8b35dd1fc1915522c89b3f0dceda4bc59f34ae11c54ed94b92e463168dc1b&fid=4043593929-250528-272444863834399&time=1447425376&sign=FDTAXGERLBH-DCb740ccc5511e5e8fedcff06b081203-6PbJN0SXS4Wieg8a2lZHP3DlxxI%3D&to=nbc&fm=Qin,B,M,ny&sta_dx=10&sta_cs=1&sta_ft=mp3&sta_ct=6&fm2=Qingdao,B,M,ny&newver=1&newfm=1&secfm=1&flow_ver=3&pkey=1400b5ebd4fa7879a3d77305de1fb2d5eedc2a59ed73000000a47d97&sl=72220750&expires=8h&rt=sh&r=909480829&mlogid=7350776348994600229&vuk=-&vbdid=4192564218&fin=%E8%B4%A2%E5%AF%8C%E8%87%AA%E7%94%B1.mp3&fn=%E8%B4%A2%E5%AF%8C%E8%87%AA%E7%94%B1.mp3&slt=pm&uta=0&rtype=1&iv=0&isw=0&dp-logid=7350776348994600229&dp-callid=0.1.1" controls="controls"></audio>
+            <img id="playsong" src="images/play.png" onclick="songSwitch()">
+            <audio id="song" src="audio/song.mp3"></audio>
             <div class="triangle"></div>
         </div>
 
@@ -25,51 +25,51 @@
             点击得票数最多人的头像
         </div>
         <ul class="vote">
-            <li>
+            <li class="voteButton" onclick="showTool(this)">
                 <div class="logo">水民</div>
                 <div class="no">1号</div>
             </li>
-            <li>
+            <li class="voteButton" onclick="showTool(this)">
                 <div class="logo">水民</div>
                 <div class="no">2号</div>
             </li>
-            <li>
+            <li class="voteButton" onclick="showTool(this)">
                 <div class="logo">警察</div>
                 <div class="no">3号</div>
             </li>
-            <li>
+            <li class="voteButton" onclick="showTool(this)">
                 <div class="logo">法官</div>
                 <div class="no">4号</div>
             </li>
-            <li>
+            <li class="voteButton" onclick="showTool(this)">
                 <div class="logo">狙击手</div>
                 <div class="no">5号</div>
             </li>
-            <li>
+            <li class="voteButton" onclick="showTool(this)">
                 <div class="logo">医生</div>
                 <div class="no">6号</div>
             </li>
-            <li>
+            <li class="voteButton" onclick="showTool(this)">
                 <div class="logo">杀手</div>
                 <div class="no">7号</div>
             </li>
-            <li>
+            <li class="voteButton" onclick="showTool(this)">
                 <div class="logo">水民</div>
                 <div class="no">8号</div>
             </li>
-            <li>
+            <li class="voteButton" onclick="showTool(this)">
                 <div class="logo">水民</div>
                 <div class="no">9号</div>
             </li>
-            <li>
+            <li class="voteButton" onclick="showTool(this)">
                 <div class="logo">水民</div>
                 <div class="no">10号</div>
             </li>
-            <li>
+            <li class="voteButton" onclick="showTool(this)">
                 <div class="logo">水民</div>
                 <div class="no">11号</div>
             </li>
-            <li>
+            <li class="voteButton" onclick="showTool(this)">
                 <div class="logo">水民</div>
                 <div class="no">12号</div>
             </li>
@@ -81,5 +81,6 @@
         </footer>
 
     </div>
+<script src="Task6.js"></script>
 </body>
 </html>

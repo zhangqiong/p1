@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    /*background-color: #99CC99;*/
+    color: white;
+    font-size: 3vmin;
+}
+header,
+article,
+section{
+    width: 100%;
+    text-align: center;
+}
+.left{
+    background-color: #99CC33;
+}
+.myname{
+    width: 100%;
+
+    font-size: 12vmin;
+}
+.left table{
+    margin:auto;
+    text-align: center;
+}
+.right{
+    background-color:#FF9900;
+}
+
+.skill table{
+    text-align: right;
+    margin:auto;
+}
+/*进度条*/
+progress{
+    font-size: 0.8rem;
+    background-color: #FF6600;
+    color: lightgray;
+    border: none;
+}
+progress::-moz-progress-bar {
+    background: white;
+}
+progress::-webkit-progress-bar {
+    background: #FF6600;
+}
+progress::-webkit-progress-value{
+    background: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+}
+/*屏幕宽高比大于1*/
+@media screen and (min-device-aspect-ratio:1/1 ){
+    .left{
+        position: absolute;
+        left: 0;
+        top:0;
+        width: 30%;
+        min-width: 45vh;
+        height: 100vh;
+    }
+    .myname{
+        height: 50vh;
+        line-height: 50vh;
+    }
+    .right {
+        float: right;
+        width: 70%;
+        height: 100vh;
+    }
+    .right > *{
+        margin:16vh 0;
+    }
+    .educate{
+        height: 12vh;
+    }
+    .skill{
+        height: 40vh;
+
+    }
+
+}
+/*屏幕宽高比小于1*/
+@media screen and (max-device-aspect-ratio:1/1 ){
+    .left{
+        position: static;
+        width: 100%;
+        height: 38.4vh;
+        padding-top: 1vh;
+    }
+    .myname{
+        margin-top:10vh;
+    }
+    .right{
+        height: 61.6vh;
+        width: 100%;
+        padding-top: 1vh;
+    }
+    .right > *{
+        margin:10vh auto;
+    }
+    .educate{
+        height: 10vh;
+
+    }
+    .skill{
+        height: 20vh;
+    }
+}
+@media print {
+    .left{
+        position: static;
+        width: 100%;
+        height: 200px;
+        padding-top: 1px;
+    }
+    .myname{
+        margin-top:10px;
+    }
+    .right{
+        height: 616px;
+        width: 100%;
+        padding-top: 1px;
+    }
+    .right > *{
+        margin:10vh auto;
+    }
+    .educate{
+        height: 100px;
+
+    }
+    .skill{
+        height: 200px;
+    }
+}
+

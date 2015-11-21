@@ -57,12 +57,13 @@ body{
     color: #464646;
     font-size: 4vmin;
 }
+/*气泡的播放按钮*/
 .bubble img{
+    cursor: pointer;
     width:8vmin;
-    margin:3vmin 11vmin;
+    margin:3vmin 3.1%;
     float:right;
 }
-/*气泡的播放按钮*/
 .bubble #song{
     width: 20px;
     height: 20px;
@@ -94,6 +95,9 @@ body{
 }
 
 /*投票*/
+.voteButton{
+    cursor:pointer;
+}
 .vote li{
     list-style-type: none;
     float:left;
@@ -101,6 +105,10 @@ body{
     height: 20vmin;
     margin:3vmin 6vmin 9vmin;
     border: solid white 0.9vmin;
+}
+.vote li img{
+    width:4.8vmin;
+    margin-top: 3vmin;
 }
 /*头像*/
 .vote .logo{
