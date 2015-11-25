@@ -88,7 +88,8 @@ a:hover{
 
 }
 /*屏幕宽高比小于1*/
-@media screen and (max-device-aspect-ratio:1/1 ){
+@media screen and (max-device-aspect-ratio:1/1 )
+{
     .left{
         position: static;
         width: 100%;
