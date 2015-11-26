@@ -34,12 +34,14 @@
         </nav>
         <div class="carousel">
 
-            <img class="carousel_pic" src="images/carousel.jpg">
+            <img id="carousel_pic1" class="carousel_pic curr" src="images/carousel.jpg">
+            <img id="carousel_pic2" class="carousel_pic" src="images/carousel.jpg">
+            <img id="carousel_pic3" class="carousel_pic" src="images/carousel.jpg">
             <div class="left">
-                <span class="icon"></span>
+                <span class="icon" onclick="last_pic()"></span>
             </div>
             <div class="right">
-                <span class="icon"></span>
+                <span class="icon" onclick="next_pic()"></span>
             </div>
             <div class="point">
                 <span class="icon"></span>

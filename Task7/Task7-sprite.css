@@ -108,11 +108,19 @@ address{
     left: 0;
     top:0;
     width: 100%;
-    /*overflow: hidden;*/
+    height: 31.25vw;
+    min-height: 320px;
+    overflow: hidden;
 }
 .carousel_pic{
     /*float: left;*/
+    position: absolute;
+    left: -100%;
     width: 100%;
+
+}
+.carousel .curr{
+    left: 0;
 }
 .carousel .left,
 .carousel .right,
@@ -418,4 +426,137 @@ address{
 .clear{
     float: none;
     clear: both;
+}
+/*图片向右滑出*/
+@keyframes right-out {
+    from{
+        left: 0;
+    }
+    to{
+        left: 100%;
+    }
+}
+@-o-keyframes right-out {
+    from{
+        left: 0;
+    }
+    to{
+        left: 100%;
+    }
+}
+@-webkit-keyframes right-out {
+    from{
+        left: 0;
+    }
+    to{
+        left: 100%;
+    }
+}
+@-moz-keyframes right-out {
+    from{
+        left: 0;
+    }
+    to{
+        left: 100%;
+    }
+}
+
+/*向右划入*/
+@keyframes right-in {
+    from{
+        left: 100%;
+    }
+    to{
+        left:0;
+    }
+}
+@-o-keyframes right-in {
+    from{
+        left: 100%;
+    }
+    to{
+        left:0;
+    }
+}
+@-webkit-keyframes right-in {
+    from{
+        left: 100%;
+    }
+    to{
+        left:0;
+    }
+}
+@-moz-keyframes right-in {
+    from{
+        left: 100%;
+    }
+    to{
+        left:0;
+    }
+}
+/*向左滑出*/
+@keyframes left-out {
+    from{
+        left: 0;
+    }
+    to{
+        left: -100%;
+    }
+}
+@-o-keyframes left-out {
+    from{
+        left: 0;
+    }
+    to{
+        left: -100%;
+    }
+}
+@-webkit-keyframes left-out {
+    from{
+        left: 0;
+    }
+    to{
+        left: -100%;
+    }
+}
+@-moz-keyframes left-out {
+    from{
+        left: 0;
+    }
+    to{
+        left: -100%;
+    }
+}
+/*向左滑入*/
+@keyframes left-in {
+    from{
+        left: -100%;
+    }
+    to{
+        left: 0;
+    }
+}
+@-o-keyframes left-in {
+    from{
+        left: -100%;
+    }
+    to{
+        left: 0;
+    }
+}
+@-webkit-keyframes left-in {
+    from{
+        left: -100%;
+    }
+    to{
+        left: 0;
+    }
+}
+@-moz-keyframes left-in {
+    from{
+        left: -100%;
+    }
+    to{
+        left: 0;
+    }
 }
