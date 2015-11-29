@@ -1,0 +1,96 @@
+.container{
+    width: 100%;
+    min-width: 1024px;
+    background-color: #fafafa;
+}
+.header{
+    width: 100%;
+}
+.header_content{
+    width: 1024px;
+    height: 40px;
+    margin:auto;
+    line-height: 40px;
+    font-size: .8rem;
+    /*font-weight: 600;*/
+    color: #26a26f;
+}
+.header address{
+    float: left;
+}
+.login{
+    float: right;
+    height: 40px;
+    line-height: 40px;
+}
+.login .icon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+
+    background: no-repeat;
+}
+address{
+    font-style: normal;
+}
+#wechat{
+    background-image: url('../images/mysprite.png');
+    background-position: left -0px;
+}
+#qq{
+    background-image: url('../images/mysprite.png');
+    background-position: left -25px;
+}
+#weibo{
+    background-image: url('../images/mysprite.png');
+    background-position: left -49px;
+}
+
+/*导航栏*/
+.nav_main{
+    background-color: #26a26f;
+    width: 100%;
+    height: 100px;
+}
+.nav_main_content{
+    /*border:solid;*/
+    width: 1024px;
+    line-height: 100px;
+    margin: auto;
+}
+#logo{
+    display: inline-block;
+    width: 107px;
+    height: 50px;
+    vertical-align: middle;
+    background-image: url("../images/logo.png");
+}
+.nav_main_content ul{
+    width: 500px;
+    float: right;
+}
+.nav_main_content li{
+    float:right;
+    width: 100px;
+    list-style-type: none;
+    cursor: pointer;
+}
+.nav_button{
+    display: block;
+    text-align: center;
+    line-height: 100px;
+    width: 100px;
+    color: white;
+}
+.nav_button a{
+    text-decoration: none;
+}
+.nav_button:hover{
+    height: 97px;
+    border-bottom: solid 3px white;
+}
+.nav_main_content .chosen{
+    height: 97px;
+    border-bottom: solid 3px white;
+}

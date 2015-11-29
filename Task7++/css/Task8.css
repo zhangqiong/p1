@@ -1,0 +1,79 @@
+.banner{
+    width: 100%;
+}
+.trace{
+    width: 1024px;
+    margin: 30px auto;
+
+}
+.trace > a{
+    color: black;
+}
+.trace > a:last-child{
+    color: #29b078;
+}
+/*中间内容*/
+.article_wraper{
+    width: 1024px;
+    margin: 30px auto;
+}
+.aside_main,
+.article_main{
+    border-radius: 5px;
+    background-color: white;
+}
+/*左侧内容*/
+.aside_main{
+    width: 25%;
+    float: left;
+
+}
+.aside_main h3{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-bottom: solid #e6e6e6 thin;
+}
+.aside_main li{
+    height: 50px;
+    cursor: pointer;
+    line-height: 50px;
+    margin-left: 33%;
+    list-style-type: none;
+}
+.aside_main li .icon{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    background-image: url("../images/point_eg.png");
+}
+.aside_main .chosen .icon{
+    background-image: url("../images/point_o.png");
+}
+.aside_main li{
+    color: #29b078;
+}
+.aside_main .chosen{
+    color: #ff650e;
+}
+/*介绍主体*/
+.article_main{
+    width: 70%;
+    float: right;
+}
+.article_main .section1{
+    border-bottom: solid #e6e6e6 thin;
+}
+.article_main .section1 .co_logo{
+    display: block;
+    float: left;
+    width: 122px;
+    height: 31px;
+    margin: 50px;
+    background-image: url("../images/tudou.png");
+}
+.article_main p{
+    margin: 50px;
+    text-indent: 2rem;
+}

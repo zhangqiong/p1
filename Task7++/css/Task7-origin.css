@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: no-repeat;
+}
+a:hover{
+    text-decoration:underline;
+}
+img{
+    border: none;
+}
+.shadow{
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    -o-box-shadow:  0 0 5px rgba(0,0,0,0.3);
+    -webkit-box-shadow:  0 0 5px rgba(0,0,0,0.3);
+}
+.
+body{
+    background-color: #fafafa;
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    min-width: 1024px;
+    background-color: #fafafa;
+}
+.header{
+    width: 100%;
+}
+.header_content{
+    width: 1024px;
+    height: 26px;
+    margin:auto;
+    line-height: 26px;
+    font-size: .8rem;
+    /*font-weight: 600;*/
+    color: #26a26f;
+}
+.header address{
+    float: left;
+}
+.login{
+    float: right;
+    height: 40px;
+    line-height: 40px;
+}
+.login .icon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+
+    background: no-repeat;
+}
+address{
+    font-style: normal;
+}
+#wechat{
+    /** sprite: mysprite; sprite-image: url('../img/mysprite.png'); sprite-layout: vertical */
+    background-image: url("../images/wechat.png") ; /** sprite-ref: mysprite; */
+}
+#qq{
+    background-image: url("../images/qq.png"); /** sprite-ref: mysprite; */
+}
+#weibo{
+    background-image: url("../images/weibo.png"); /** sprite-ref: mysprite; */
+}
+
+/*导航栏*/
+.nav_main{
+    background-color: #26a26f;
+    width: 100%;
+    height: 100px;
+}
+.nav_main_content{
+    /*border:solid;*/
+    width: 1024px;
+    margin: auto;
+}
+.nav_main_content li{
+    float:right;
+    text-align: center;
+    line-height: 100px;
+    width: 100px;
+    color: white;
+    list-style-type: none;
+    cursor: pointer;
+}
+.nav_button:hover{
+    height: 97px;
+    border-bottom: solid 3px white;
+}
+.nav_main_content .chosen{
+    height: 97px;
+    border-bottom: solid 3px white;
+}
+/*轮播图*/
+.carousel{
+    position: relative;
+    left: 0;
+    top:0;
+    width: 100%;
+    /*overflow: hidden;*/
+}
+.carousel_pic{
+    /*float: left;*/
+    width: 100%;
+}
+.carousel .left,
+.carousel .right,
+.carousel .point{
+    /*border: solid;*/
+    cursor: pointer;
+    position: absolute;
+}
+.carousel .left{
+    left: 0;
+    top:0;
+    width: 10%;
+    padding:13% 0;
+}
+.carousel .icon{
+    background: no-repeat;
+    width: 27px;
+    height: 46px;
+}
+.carousel .left .icon{
+    float: right;
+    background-image: url("../images/left.png"); /** sprite-ref: mysprite;*/
+}
+.carousel .right{
+    right: 0;
+    top:0;
+    width: 10%;
+    padding:13% 0;
+}
+.carousel .right .icon{
+    background-image: url("../images/right.png"); /** sprite-ref: mysprite; */
+}
+.carousel .point{
+    font-size: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+
+}
+.carousel .point .icon{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 2px;
+    background-image: url("../images/point_we.png"); /** sprite-ref: mysprite; */
+}
+/*主体*/
+.article_main{
+    width: 1024px;
+    margin: auto;
+}
+.row{
+    margin: 30px 0;
+}
+.row h2{
+    display: block;
+    text-align: center;
+    line-height: 80px;
+}
+/*第一行*/
+.feature,
+.peo_count{
+    height: 300px;
+    float: left;
+    width: 24.9%;
+}
+.feature .top{
+    height: 100px;
+    width: 100%;
+    padding-top: 50px;
+}
+.feature .icon{
+    display: block;
+    margin: auto;
+
+}
+.feature h3{
+    width: 100%;
+    text-align: center;
+}
+.feature .text{
+    display: block;
+    margin: 20px;
+}
+.right_dashed{
+    border-right: 1px gray dashed;
+}
+#efficient{
+    width: 43px;
+    height: 62px;
+    background-image: url("../images/rocket.png"); /** sprite-ref: mysprite;sprite-alignment:center */
+}
+#standard{
+    width: 61px;
+    height: 48px;
+    background-image: url("../images/standard.png"); /** sprite-ref: mysprite; */
+}
+#peo_hub{
+    width: 52px;
+    height: 55px;
+    background-image: url("../images/peo_hub.png"); /** sprite-ref: mysprite; */
+}
+.peo_count_content{
+    position: relative;
+    top:150px;
+    width: 60%;
+    height: 100px;
+    margin: auto;
+    line-height: 2rem;
+}
+.peo_count .icon{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-image: url("../images/peo.png"); /** sprite-ref: mysprite; */
+}
+
+
+/*第二行如何学习*/
+.how_to_learn .step{
+    float: left;
+    width: 203px;
+    margin-bottom: 30px;
+}
+.icon{
+    display: inline-block;
+}
+.how_to_learn .round{
+    display: block;
+    float: left;
+    width: 70px;
+    height: 70px;
+    background-image: url("../images/point_w.png"); /** sprite-ref: mysprite; */
+    color: #26a26f;
+    line-height: 70px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.how_to_learn .text{
+    margin: 17px 5px;
+    float: left;
+    font-size: 0.8rem;
+}
+.how_to_learn .next{
+    float: left;
+    margin: 22px;
+    background-image: url("../images/next.png"); /** sprite-ref: mysprite; */
+    height: 26px;
+    width: 26px;
+}
+
+/*第三行优秀学员*/
+.stu{
+    float: left;
+    width: 18%;
+    margin: 0 1.5%;
+    padding: 2%;
+    background-color: white;
+}
+.students .photo{
+    display: block;
+    width: 108px;
+    height: 109px;
+    margin: auto;
+}
+#man1{
+    background-image: url("../images/man1.png");
+}
+#man2{
+    background-image: url("../images/man2.png");
+}
+#wman1{
+    background-image: url("../images/wman1.png");
+}
+#wman2{
+    background-image: url("../images/wman2.png");
+}
+.stu h3{
+    text-align: center;
+    margin: 15px 0;
+
+}
+.stu p{
+    color: gray;
+}
+
+/*第三行合作*/
+.cooperation .icon{
+    width: 20%;
+    height: 120px;
+    display: inline-block;
+    background-position: center;
+    background-image: url("../images/jinsy.jpg");
+    cursor: pointer;
+}
+.cooperation_content{
+    height: 120px;
+    background: white;
+    font-size: 0;
+}
+
+/*底部*/
+.footer_main{
+    font-size: 0.5rem;
+}
+/*友情链接*/
+.link_to{
+    width: 100%;
+    min-width: 1024px;
+
+    color: gray;
+    background-color: white;
+}
+.link_to_content{
+    width: 1004px;
+    /*height: 60px;*/
+    padding:10px;
+    margin: auto;
+
+}
+
+.link_to li{
+    float:left;
+    width: 100px;
+    list-style-position: inside;
+}
+
+.link_to_content > h5{
+    width: 100px;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+/*联系*/
+.contact{
+    width: 100%;
+    min-width: 1024px;
+    height: 150px;
+    background-color: #26a26f;
+}
+.contact{
+    width: 100%;
+    min-width: 1024px;
+    height: 150px;
+    background-color: #26a26f;
+}
+.contact_content{
+    width: 1024px;
+    height: 170px;
+    margin: auto;
+    color: white;
+    line-height: 3rem;
+}
+
+.contact_content > *{
+    float:left;
+
+}
+.contact_content li{
+    list-style-type: none;
+}
+/*二维码*/
+.tdcode{
+    float:right;
+    margin:30px;
+    line-height: 200px;
+}
+/*左侧*/
+.slogan{
+    line-height: 6rem;
+    font-size: 1rem;
+}
+/*中间*/
+.our_site{
+    width: 200px;
+    margin-left: 250px;
+}
+.our_site li{
+    width:100px;
+    float:left;
+}
+.copyright{
+    width: 100%;
+    min-width: 1024px;
+    height: 28px;
+    background-color: #26a26f;
+    border-top: solid 1px #32c086;
+    color: white;
+    text-align: center;
+}
+
+/*清除浮动用的块*/
+.clear{
+    float: none;
+    clear: both;
+}
