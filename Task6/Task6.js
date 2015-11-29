@@ -32,8 +32,8 @@ img[0].src="images/pen.png";
 tool.appendChild(img[0]);
 img[1].src="images/find.png";
 tool.appendChild(img[1]);
-img[2].src="images/quan.png"
-img[3].src="images/add.png"
+img[2].src="images/quan.png";
+img[3].src="images/add.png";
 tool.appendChild(img[2]);
 tool.appendChild(img[3]);
 //tool.appendChild()
