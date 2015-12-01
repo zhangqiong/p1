@@ -9,22 +9,20 @@
 }
 /*友情链接*/
 .link_to{
+    margin-top: 30px;
     width: 100%;
-    min-width: 1024px;
     color: gray;
     background-color: white;
 }
 .link_to_content{
-    width: 1004px;
-    /*height: 60px;*/
+    box-sizing: border-box;
     padding:10px;
     margin: auto;
-
 }
 
 .link_to li{
+    width: 80px;
     float:left;
-    width: 100px;
     list-style-position: inside;
 }
 
@@ -37,19 +35,10 @@
 /*联系*/
 .contact{
     width: 100%;
-    min-width: 1024px;
-    height: 150px;
-    background-color: #26a26f;
-}
-.contact{
-    width: 100%;
-    min-width: 1024px;
-    height: 150px;
     background-color: #26a26f;
 }
 .contact_content{
-    width: 1024px;
-    height: 170px;
+
     margin: auto;
     color: white;
     line-height: 3rem;
@@ -57,26 +46,24 @@
 
 .contact_content > *{
     float:left;
-
 }
 .contact_content li{
     list-style-type: none;
 }
 /*二维码*/
 .tdcode{
-    float:right;
     margin:30px;
     line-height: 200px;
 }
 /*左侧*/
 .slogan{
+    width: 200px;
     line-height: 6rem;
     font-size: 1rem;
 }
 /*中间*/
 .our_site{
     width: 200px;
-    margin-left: 250px;
 }
 .our_site li{
     width:100px;
@@ -84,10 +71,27 @@
 }
 .copyright{
     width: 100%;
-    min-width: 1024px;
     height: 28px;
     background-color: #26a26f;
     border-top: solid 1px #32c086;
     color: white;
     text-align: center;
+}
+@media screen and (min-width: 1050px){
+    .link_to_content{
+        width: 1024px;
+    }
+    .contact_content{
+        width: 1024px;
+    }
+    .tdcode{
+        float:right;
+        margin:30px;
+    }
+    .link_to li{
+        width: 100px;
+    }
+    .our_site{
+        margin-left: 200px;
+    }
 }

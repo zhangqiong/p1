@@ -2,7 +2,7 @@
     width: 100%;
 }
 .trace{
-    width: 1024px;
+    width: 100%;
     margin: 30px auto;
 
 }
@@ -14,7 +14,7 @@
 }
 /*中间内容*/
 .article_wraper{
-    width: 1024px;
+    width: 100%;
     margin: 30px auto;
 }
 .aside_main,
@@ -24,9 +24,7 @@
 }
 /*左侧内容*/
 .aside_main{
-    width: 25%;
     float: left;
-
 }
 .aside_main h3{
     height: 50px;
@@ -38,7 +36,6 @@
     height: 50px;
     cursor: pointer;
     line-height: 50px;
-    margin-left: 33%;
     list-style-type: none;
 }
 .aside_main li .icon{
@@ -59,8 +56,7 @@
 }
 /*介绍主体*/
 .article_main{
-    width: 70%;
-    float: right;
+    float: left;
 }
 .article_main .section1{
     border-bottom: solid #e6e6e6 thin;
@@ -71,9 +67,38 @@
     width: 122px;
     height: 31px;
     margin: 50px;
+    margin-top: 0;
     background-image: url("../images/tudou.png");
 }
 .article_main p{
     margin: 50px;
+    /*float: left;*/
     text-indent: 2rem;
+}
+@media screen and (min-width: 1050px){
+    .trace{
+        width: 1024px;
+    }
+    .article_wraper{
+        width: 1024px;
+    }
+    .aside_main{
+        width: 25%;
+    }
+    .article_main{
+        width: 70%;
+        float: right;
+    }
+    .aside_main li{
+        margin-left: 33%;
+    }
+}
+@media screen and (max-width: 1050px){
+    .aside_main{
+        width: 100%;
+    }
+    .aside_main li{
+        float: left;
+        margin: 0 5px;
+    }
 }
