@@ -1,0 +1,11 @@
+.link_to_content li{
+    float: left;
+}
+.header address{
+    float: left;
+}
+.login{
+    float: right;
+    height: 40px;
+    line-height: 40px;
+}
