@@ -20,8 +20,17 @@ table{
     height: 100vh;
     overflow: hidden;
 }
-
-
+h2{
+    font-size: 0.5rem;
+}
+p{
+    color: gray;
+    font-size:0.1rem;
+}
+.link_to a{
+    font-size: 0.4rem;
+    color: gray;
+}
 
 a{
     text-decoration: none;
@@ -74,10 +83,10 @@ a:hover{
         font-size: 0;
         position: absolute;
         left:50%;
-        top:50%;
+        top:30%;
         width: 1599px;
         height: 900px;
-        margin:-450px 0 0 -800px;
+        margin:-300px 0 0 -800px;
     }
     nav{
         position: fixed;
