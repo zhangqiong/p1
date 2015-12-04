@@ -64,8 +64,8 @@
       <file leaf-file-name="ptt.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ptt.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43137255" vertical-offset="66" max-vertical-offset="1056">
-              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.7394958" vertical-offset="66" max-vertical-offset="1056">
+              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -700,7 +700,13 @@
       <option name="project" value="LOCAL" />
       <updated>1449193737840</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013">
+      <created>1449194235723</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1449194235723</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -747,7 +753,8 @@
     <MESSAGE value="更改了简历效果" />
     <MESSAGE value="完成了一个响应式网页" />
     <MESSAGE value="用bootstrap更改Task7++的网页 未完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="与同学做的一个餐饮管理系统 初始" />
+    <option name="LAST_COMMIT_MESSAGE" value="与同学做的一个餐饮管理系统 初始" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1131,8 +1138,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ptt.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43137255" vertical-offset="66" max-vertical-offset="1056">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.7394958" vertical-offset="66" max-vertical-offset="1056">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
           <folding />
         </state>
       </provider>
