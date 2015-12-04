@@ -1,42 +1,142 @@
 *{
     margin:0;
     padding:0;
+
+}
+html{
+    font-family: "Helvetica Neue", "Microsoft YaHei",Helvetica, Arial, sans-serif;
+    font-size: 1.6vmax;
 }
 body{
-    /*background-color: #99CC99;*/
     color: white;
-    font-size: 3vmin;
 }
-header,
+.container{
+    width: 100%;
+    height:100vh;
+    overflow: hidden;
+    background-color:#26a26f;
+}
+/*侧面点*/
+.wheel_ctrl{
+    position: fixed;
+    top: 40%;
+    right: 0;
+    z-index: 10;
+    width: 130px;
+}
+.wheel_ctrl ul{
+    width: 100px;
+    margin-right: 30px;
+}
+.wheel_ctrl li{
+    cursor: pointer;
+    list-style-type: none;
+    height: 15px;
+    padding-top: 1px;
+    width: 100%;
+}
+.wheel_ctrl li span{
+    float: right;
+}
+.info{
+    display: none;
+    font-size: 10px;
+
+}
+.point{
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin: 5px 3.5px;
+    background: #ffffff;
+    border-radius: 2.5px;
+    transition: .5s;
+}
+li:hover .point{
+    width: 8px;
+    height: 8px;
+    margin: 3.5px 2px;
+    border-radius: 4px;
+}
+li:hover .info{
+    display: inline-block;
+}
+.present_p{
+    width: 12px;
+    height: 12px;
+    margin: 1.5px 0;
+    border-radius: 6px;
+}
+
+
 article,
 section{
     width: 100%;
     text-align: center;
 }
-.left{
-    background-color: #99CC33;
-}
-.myname{
+.row{
+    position: absolute;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 20vh 20%;
+
+    background-color:#26a26f;
     width: 100%;
+    height:100%;
+    top: -100%;
 
-    font-size: 12vmin;
 }
-.left table{
-    margin:auto;
-    text-align: center;
-}
-.right{
-    background-color:#FF9900;
-}
+.row p{
 
+    margin: 0.5rem;
+}
+.present_row{
+    background-color: #99CC33;
+    left: 0;
+    top: 0;
+
+}
+h1,
+h2{
+    margin-bottom: 2rem;
+    width: 100%;
+    font-size: 3rem;
+}
+.edu h2,
+.prize h2,
+.wish h2,
+.more h2{
+    margin-top: 30px;
+}
+h3{
+    font-size: 1.5rem;
+}
+.sth{
+    float: left;
+    text-align: left;
+}
+.loading{
+    position: absolute;
+    right: 30%;
+    bottom: 30%;
+}
+.more a{
+    display: block;
+    /*margin-top: 2vmin;*/
+}
 .skill table{
     text-align: right;
-    margin:auto;
+    margin: auto;
+}
+.skill p{
+    margin-top: 0.5rem;
+    float: right;
 }
 /*进度条*/
 progress{
     font-size: 0.8rem;
-    background-color: #FF6600;
+    background-color: #26a26f;;
     color: lightgray;
     border: none;
 }
@@ -44,7 +144,7 @@ progress::-moz-progress-bar {
     background: white;
 }
 progress::-webkit-progress-bar {
-    background: #FF6600;
+    background: #26a26f;;
 }
 progress::-webkit-progress-value{
     background: white;
@@ -56,89 +156,24 @@ a{
 a:hover{
     text-decoration: underline;
 }
-/*屏幕宽高比大于1*/
-@media screen and (min-device-aspect-ratio:1/1 ){
-    .left{
-        position: absolute;
-        left: 0;
-        top:0;
-        width: 30%;
-        min-width: 45vh;
-        height: 100vh;
+.clear{
+    clear: both;
+}
+@media screen and (max-width: 500px){
+    .container{
+        height: auto;
+        padding-bottom: 20px;
     }
-    .myname{
-        height: 50vh;
-        line-height: 50vh;
+    .row{
+        position: static;
+        height: auto;
+        padding:10px;
     }
-    .right {
+    .wheel_ctrl{
+        display: none;
+    }
+    .loading{
+        position: static;
         float: right;
-        width: 70%;
-        height: 100vh;
-    }
-    .right > *{
-        margin:16vh 0;
-    }
-    .educate{
-        height: 12vh;
-    }
-    .skill{
-        height: 40vh;
-
-    }
-
-}
-/*屏幕宽高比小于1*/
-@media screen and (max-device-aspect-ratio:1/1 )
-{
-    .left{
-        position: static;
-        width: 100%;
-        height: 38.4vh;
-        padding-top: 1vh;
-    }
-    .myname{
-        margin-top:10vh;
-    }
-    .right{
-        height: 61.6vh;
-        width: 100%;
-        padding-top: 1vh;
-    }
-    .right > *{
-        margin:10vh auto;
-    }
-    .educate{
-        height: 10vh;
-
-    }
-    .skill{
-        height: 20vh;
     }
 }
-@media print {
-    .left{
-        position: static;
-        width: 100%;
-        height: 200px;
-        padding-top: 1px;
-    }
-    .myname{
-        margin-top:10px;
-    }
-    .right{
-        height: 616px;
-        width: 100%;
-        padding-top: 1px;
-    }
-    .right > *{
-        margin:10vh auto;
-    }
-    .educate{
-        height: 100px;
-
-    }
-    .skill{
-        height: 200px;
-    }
-}
-

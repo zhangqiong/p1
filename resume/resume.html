@@ -3,71 +3,117 @@
 <head lang="zh">
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
     <link rel="stylesheet" href="resume.css">
     <title>张琼</title>
 </head>
 <body>
-<div class="container">
-    <header class="left">
+<article class="container">
+    <aside class="wheel_ctrl">
+        <ul>
+            <li onclick="set_row(0)"><span class="point present_p"></span><span class="info">首页</span></li>
+            <li onclick="set_row(1)"><span class="point"></span><span class="info">教育背景</span></li>
+            <li onclick="set_row(2)"><span class="point"></span><span class="info">项目经验</span></li>
+            <li onclick="set_row(3)"><span class="point"></span><span class="info">技能</span></li>
+            <li onclick="set_row(4)"><span class="point"></span><span class="info">我的证书</span></li>
+            <li onclick="set_row(5)"><span class="point"></span><span class="info">心仪职位</span></li>
+            <li onclick="set_row(6)"><span class="point"></span><span class="info">了解更多</span></li>
+        </ul>
+    </aside>
+    <section class="row present_row">
         <h1 class="myname">张琼</h1>
+        <p>喜欢漂亮网站 喜欢风景 喜欢漂亮裙子</p>
+        <p>爱看电影 爱看书</p>
+        <p>对管理、经济、心理学充满好奇</p>
+        <p>没事去蹭课的前端妹子</p>
         <contact>
-            18844546465<br>
-            zhangqiong.se@gmail.com<br>
-            <a href="http://115.28.213.230" target="_blank">http://theheartofzqiong.com</a><br>
-            <a href="http://bbs.ptteng.com/forum.php?mod=viewthread&tid=7787&highlight=186" target="_blank">我的学习日报</a><br>
+            TEL:18844546465<br>
+            <a href="mailto:zhangqiong.se@gmail.com"> zhangqiong.se@gmail.com</a><br>
         </contact>
-    </header>
-    <article class="right">
-        <section class="educate">
-            <header><h2>教育背景</h2></header>
-            吉林大学软件学院|软件工程 本科<br>
-            2013/09--2017/06
+        <div class="clear"></div>
+    </section>
 
-        </section>
+    <section class="row edu">
+        <h2>教育背景</h2>
+        <p>吉林大学软件学院|软件工程 本科</p>
+        <p>2013/09--2017/06</p>
+        <div class="clear"></div>
+    </section>
 
-        <section class="skill">
-            <header><h2>技能</h2></header>
-            <table>
-                <tr>
-                    <td>HTML</td>
-                    <td><progress max="1" value="0.7"></progress></td>
-                </tr>
-                <tr>
-                    <td>CSS</td>
-                    <td><progress max="1" value="0.7"></progress></td>
-                </tr>
-                <tr>
-                    <td>JS</td>
-                    <td><progress max="1" value="0.3"></progress></td>
-                </tr>
-                <tr>
-                    <td>计算机网络</td>
-                    <td><progress max="1" value="0.7"></progress></td>
-                </tr>
-                <tr>
-                    <td>PS</td>
-                    <td><progress max="1" value="0.5"></progress></td>
-                </tr>
-                <tr>
-                    <td>数据库</td>
-                    <td><progress max="1" value="0.7"></progress></td>
-                </tr>
-                <tr>
-                    <td>Java</td>
-                    <td><progress max="1" value="0.7"></progress></td>
-                </tr>
-                <tr>
-                    <td>linux</td>
-                    <td><progress max="1" value="0.6"></progress></td>
-                </tr>
-            </table>
+    <section class="row">
+        <h2>项目经验</h2>
+        <div class="sth">
+            <h3><a href="../Task7++/Task7.html" target="_blank">一个响应式的网页</a></h3>
+            <p>首页、职业、推荐部分</p>
+        </div>
+        <p class="loading">loading...</p>
+        <div class="clear"></div>
+    </section>
 
+    <section class=" row skill">
+        <header><h2>技能</h2></header>
+        <table>
+            <tr>
+                <td>HTML</td>
+                <td><progress max="1" value="0.7"></progress></td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td><progress max="1" value="0.7"></progress></td>
+            </tr>
+            <tr>
+                <td>JS</td>
+                <td><progress max="1" value="0.3"></progress></td>
+            </tr>
+            <tr>
+                <td>计算机网络</td>
+                <td><progress max="1" value="0.7"></progress></td>
+            </tr>
+            <tr>
+                <td>PS</td>
+                <td><progress max="1" value="0.5"></progress></td>
+            </tr>
+            <tr>
+                <td>数据库</td>
+                <td><progress max="1" value="0.7"></progress></td>
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td><progress max="1" value="0.7"></progress></td>
+            </tr>
+            <tr>
+                <td>linux</td>
+                <td><progress max="1" value="0.6"></progress></td>
+            </tr>
+        </table>
+        <p>正在学习前端的路上——全力前进</p>
+        <div class="clear"></div>
+    </section>
 
-        </section>
-        <section>
+    <section class="row prize">
+        <h2>我的证书</h2>
+        <p>英语四级（CET4）</p>
+        <p>数学建模二等奖</p>
+        <div class="clear"></div>
+    </section>
 
-        </section>
-    </article>
-</div>
+    <section class="row wish">
+        <h2>心仪职位</h2>
+        <p>前端实习生</p>
+        <p>工作地点：上海/北京</p>
+        <div class="clear"></div>
+    </section>
+
+    <section class="row more">
+        <h2>了解更多</h2>
+        <a href="http://theheartofzqiong.com" target="_blank">我的个人主页</a>
+        <a href="http://bbs.ptteng.com/forum.php?mod=viewthread&tid=7787&highlight=186" target="_blank">我的学习日报</a>
+        <a href="张琼.pdf" target="_blank">下载简历</a>
+        <a href="http://github.com/zhangqiong" target="_blank">我的github</a>
+        <div class="clear"></div>
+    </section>
+    <div class="clear"></div>
+    <script src="resume.js"></script>
+</article>
 </body>
 </html>
