@@ -1,14 +1,14 @@
 /**
  * Created by q on 11/11/2015.
  */
-var menu_toggle;
+showMenu.menu_toggle="off";
 var container= document.getElementsByClassName("container")[0];
 var menu=document.getElementsByClassName("menu")[0];
 var body=document.getElementsByTagName("body")[0];
 function showMenu(){
 
-    if(menu_toggle!="on"){
-        menu_toggle="on";
+    if(showMenu.menu_toggle!="on"){
+        showMenu.menu_toggle="on";
         //container.style.left="77vmin";
         body.style.backgroundColor="white";
         container.classList.add("menuOn-container");
@@ -40,8 +40,8 @@ function showMenu(){
         ////firefox
         //menu.style.mozAnimation="showMenu-menu 1s forwards";
     }
-    else if(menu_toggle!="off"){
-        menu_toggle="off";
+    else if(showMenu.menu_toggle!="off"){
+        showMenu.menu_toggle="off";
         //container.style.left="0";
 
         ////动画实现
