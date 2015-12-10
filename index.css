@@ -25,7 +25,7 @@ h2{
 }
 p{
     color: gray;
-    font-size:0.1rem;
+    font-size:0.3rem;
 }
 .link_to a{
     font-size: 0.4rem;
@@ -73,6 +73,14 @@ a:hover{
         display: block;
         width:auto;
         margin-left: 12vmin;
+    }
+    p{
+        color: gray;
+        font-size:0.5rem;
+    }
+    .link_to a{
+        font-size: 0.8rem;
+        color: gray;
     }
 }
 @media screen and (min-device-aspect-ratio: 1/1){
