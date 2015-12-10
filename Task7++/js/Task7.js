@@ -28,7 +28,13 @@ function go_left(next_pic){
 }
 function go_right(last_pic){
     pics[curr_pic].style.animation="right-out 1s forwards";
+    pics[curr_pic].style.oAnimation="right-out 1s forwards";
+    pics[curr_pic].style.mozAnimation="right-out 1s forwards";
+    pics[curr_pic].style.webkitAnimation="right-out 1s forwards";
     pics[curr_pic].classList.remove("curr");
+    pics[last_pic].style.animation="left-in 1s forwards";
+    pics[last_pic].style.mozAnimation="left-in 1s forwards";
+    pics[last_pic].style.webkitAnimation="left-in 1s forwards";
     pics[last_pic].style.animation="left-in 1s forwards";
     pics[last_pic].classList.add("curr");
     points[curr_pic].classList.remove("car_pt_icon_chosen");
