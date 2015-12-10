@@ -2,15 +2,15 @@
  * Created by zq on 11/18/15.
  */
 var song=document.getElementById("song");
-var songPlaying=false;
+songSwitch.songPlaying=false;
 function songSwitch(){
-    if(songPlaying){
+    if(songSwitch.songPlaying){
         song.pause();
-        songPlaying=false;
+        songSwitch.songPlaying=false;
         //alert("pause");
-    }else if(!songPlaying){
+    }else if(!songSwitch.songPlaying){
         song.play();
-        songPlaying=true;
+        songSwitch.songPlaying=true;
         //alert("playing");
     }
 }
