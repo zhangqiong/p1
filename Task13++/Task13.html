@@ -1,46 +1,288 @@
 <!DOCTYPE html>
 <html>
-<head lang="zh">
+<head lang="zh-CN">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
     <meta http-equiv="x-ua-compatible" content="IE=edge">
-    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!--<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>-->
+    <script src="js/jquery.min.js"></script>
+    <!--<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/Task13.css">
+    <link rel="stylesheet" href="css/base.css">
     <title></title>
 </head>
 <body>
-<div class="container">
+
     <header class="header">
-        <div class="header_content">
-            <address>客服热线：010-594-78634</address>
-            <div class="login">
-                <a id="wechat" class="icon"></a>
-                <a id="qq" class="icon"></a>
-                <a id="weibo" class="icon"></a>
-                <a>登录</a>|
-                <a>注册</a>
-            </div>
+        <div class="container">
+            <div class="row">
+                <span class="">客服热线：010-594-78634</span>
+                <div class="login">
+                    <a id="wechat" class="icon"></a>
+                    <a id="qq" class="icon"></a>
+                    <a id="weibo" class="icon"></a>
+                    <a>登录</a>|
+                    <a>注册</a>
+                </div>
+        </div>
+
         </div>
 
     </header>
-    <nav class="nav_main">
-        <div  class="nav_main_content">
-            <span id="logo"></span>
-            <ul>
-                <li><a class="nav_button">关于</a></li>
-                <li><a class="nav_button" href="Task8.html">推荐</a></li>
-                <li><a class="nav_button" href="job.html">职业</a></li>
-                <li><a class="nav_button chosen" href="Task7.html">首页</a></li>
+    <nav class="navbar navbar-default ">
+        <div  class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <span></span>
+                </a>
+            </div>
 
-            </ul>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="Task13.html">首页</a></li>
+                    <li><a href="job.html">职业</a></li>
+                    <li><a href="recommend.html">推荐</a></li>
+                    <li><a href="#">关于</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="clear"></div>
     </nav>
-    <footer class="footer_main">
+    <div id="maincarousel" class="carousel">
+        <!--indicators-->
+        <ol class="carousel-indicators">
+            <li data-target="#maincarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#maincarousel" data-slide-to="1"></li>
+            <li data-target="#maincarousel" data-slide-to="2"></li>
+        </ol>
 
-        <div class="link_to">
-            <div class="link_to_content">
+        <!--wrapper for slides-->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="images/carousel.jpg"alt="0">
+                <div class="carousel-caption">
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/banner-1.jpg" alt="1">
+                <div class="carousel-caption">
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/banner-2.jpg" alt="2">
+                <div class="carousel-caption">
+
+                </div>
+            </div>
+        </div>
+        <!--controls-->
+        <a class="left carousel-control" href="#maincarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">previous</span>
+        </a>
+        <a class="right carousel-control" href="#maincarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">next</span>
+        </a>
+
+    </div>
+    <div class="container">
+
+
+        <article class="article-main">
+            <section class="row">
+                <div class="feature col-md-3 col-sm-6">
+
+                    <span class="icon" id="efficient"></span>
+
+                    <h3>高效</h3>
+                    <span class="text">将五到七年的成长时间，缩短到一到三年。</span>
+                </div>
+                <div class="feature col-md-3 col-sm-6">
+                    <span class="icon" id="standard"></span>
+
+                    <h3>规范</h3>
+                    <span class="text">标准的实战教程，不会走弯路</span>
+                </div>
+                <div class="feature col-md-3 col-sm-6">
+                    <span class="icon" id="peo_hub"></span>
+                    <h3>人脉</h3>
+                    <span class="text">同班好友，同院学长，技术大师，入学就混入职脉圈，为以后铺平道路。</span>
+                </div>
+                <div class="peo-count col-md-3 col-sm-6">
+                    <div class="peo-count-content">
+                        <span class="icon"></span>
+                        12400<br>
+                        累计在线学习人数<br>
+                        <span class="icon"></span>
+                        12400<br>
+                        学员已找到满意工作
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </section>
+
+            <section class="row how-learn">
+                <h2>如何学习</h2>
+                <div class="step col-md-3 col-xs-12 col-sm-6">
+                    <div class="step-content">
+                        <span class="round shadow">1</span>
+                        <span class="text">内视：看清自身资质<br><span class="thr-space"></span>选择合适职业</span>
+                    </div>
+                    
+                </div>
+                <div class="next-wrapper col-xs-12">
+                    <span id="next1" class="icon next col-md-1 col-sm-1 col-xs-12"></span>
+                </div>
+
+
+                <div class="step col-md-3 col-xs-12 col-sm-6">
+                    <div class="step-content">
+                        <span class="round shadow">2</span>
+                        <span class="text">远望：明确修行路线<br><span class="thr-space"></span>了解职业优劣</span>
+                    </div>
+                    
+                </div>
+                <div class="next-wrapper col-xs-12">                     <span id="next2" class="icon next col-md-1 col-sm-1 col-xs-12"></span>                 </div>
+
+                <div class="step col-md-3 col-xs-12 col-sm-6">
+                    <div class="step-content">
+                        <span class="round shadow">3</span>
+                        <span class="text">观法：预览职业技能<br><span class="thr-space"></span>优先规划路线</span>
+                    </div>
+                    
+                </div>
+                <div class="next-wrapper col-xs-12">                     <span id="next3" class="icon next col-md-1 col-sm-1 col-xs-12"></span>                 </div>
+
+                <div class="step col-md-3 col-xs-12 col-sm-6">
+                    <div class="step-content">
+                        <span class="round shadow">4</span>
+                        <span class="text">组队：寻找同院伙伴<br><span class="thr-space"></span>携手共闯江湖</span>
+                    </div>
+                    
+                </div>
+                <div class="next-wrapper col-xs-12">                     <span id="next4" class="icon next col-md-1 col-sm-1 col-xs-12"></span>                 </div>
+
+                <div class="step col-md-3 col-xs-12 col-sm-6">
+                    <div class="step-content">
+                        <span class="round shadow">5</span>
+                        <span class="text">拜师：恩师悉心教导<br><span class="thr-space"></span>有难学院撑腰</span>
+                    </div>
+                    
+                </div>
+                <div class="next-wrapper col-xs-12">                     <span id="next5" class="icon next col-md-1 col-sm-1 col-xs-12"></span>                 </div>
+
+                <div class="step col-md-3 col-xs-12 col-sm-6">
+                    <div class="step-content">
+                        <span class="round shadow">6</span>
+                        <span class="text">修行：领取实战任务<br><span class="thr-space"></span>稳步修行升级</span>
+                    </div>
+                    
+                </div>
+                <div class="next-wrapper col-xs-12">                     <span id="next6" class="icon next col-md-1 col-sm-1 col-xs-12"></span>                 </div>
+
+                <div class="step col-md-3 col-xs-12 col-sm-6">
+                    <div class="step-content">
+                        <span class="round shadow">7</span>
+                        <span class="text">指引：难点翻查攻略<br><span class="thr-space"></span>每日反思总结</span>
+                    </div>
+                    
+                </div>
+                <div class="next-wrapper col-xs-12">                     <span id="next7" class="icon next col-md-1 col-sm-1 col-xs-12"></span>                 </div>
+
+                <div class="step col-md-3 col-xs-12 col-sm-6">
+                    <div class="step-content">
+                        <span class="round shadow">8</span>
+                        <span class="text">晋级：学成下山历练<br><span class="thr-space"></span>拜访各路英豪</span>
+                        <div class="clear"></div>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section class="row students">
+                <h2>优秀学员展示</h2>
+                <div class=" col-md-3 col-sm-6">
+                    <div class="stu shadow">
+                        <span id="man1" class="icon photo"></span>
+                        <h3>优秀学员：张晋佩【CSS】</h3>
+                        <p>
+                            IT修真院让我学会了很多知识，积累了很多经验，结交了很多朋友。
+                        </p>
+                    </div>
+
+                </div>
+                <div class=" col-md-3 col-sm-6">
+                    <div class="stu shadow">
+                        <span id="wman1" class="icon photo"></span>
+                        <h3>优秀学员：张晋佩【CSS】</h3>
+                        <p>
+                            IT修真院让我学会了很多知识，积累了很多经验，结交了很多朋友。
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stu shadow ">
+                        <span id="man2" class="icon photo"></span>
+                        <h3>优秀学员：张晋佩【CSS】</h3>
+                        <p>
+                            IT修真院让我学会了很多知识，积累了很多经验，结交了很多朋友。
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stu shadow ">
+                        <span id="wman2" class="icon photo"></span>
+                        <h3>优秀学员：张晋佩【CSS】</h3>
+                        <p>
+                            IT修真院让我学会了很多知识，积累了很多经验，结交了很多朋友。
+                        </p>
+                    </div>
+
+                </div>
+                <div class="clear"></div>
+            </section>
+
+
+            <section class="row cooperation">
+                <h2>战略合作</h2>
+                <div class="cooperation-content shadow">
+                    <div class="icon-wrapper">
+                        <span id="c1" class="icon"></span>
+                    </div>
+                    <div class="icon-wrapper">
+                        <span id="c2" class="icon"></span>
+                    </div>
+                    <div class="icon-wrapper">
+                        <span id="c3" class="icon"></span>
+                    </div>
+                    <div class="icon-wrapper">
+                        <span id="c4" class="icon"></span>
+                    </div>
+                    <div class="icon-wrapper">
+                        <span id="c5" class="icon"></span>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </section>
+        </article>
+
+    </div>
+
+    <footer class="container-fluid mainfooter ">
+
+        <div class="row friendlink">
+            <div class="friendlink-content">
                 <h5>友情链接</h5>
                 <ul>
                     <li><a>手机软件</a></li>
@@ -68,33 +310,32 @@
             </div>
 
         </div>
-        <div class="contact">
-            <div class="contact_content">
-                <ul>
+        <div class="row contact">
+                <ul class="col-sm-4">
                     <li class="slogan">技能树—改变你我</li>
                     <li>
                         <a >关于我们</a>|<a>联系我们</a>|<a>合作企业</a>
                     </li>
                 </ul>
-                <div class="our_site">
+                <div class="oursite col-sm-4">
                     <h3>旗下网站</h3>
                     <ul>
                         <li><a>草船云孵化器</a></li>
                         <li><a>最强IT特训营</a></li>
                         <li><a>葡萄藤轻游戏</a></li>
                         <li><a>桌游精灵</a></li>
+                        <div class="clear"></div>
                     </ul>
                 </div>
 
-                <img class="tdcode" src="images/tdcode.jpg">
-                <div class="clear"></div>
-            </div>
-            <div class="clear"></div>
+                <div class="tdcode-wrapper col-sm-2 col-sm-offset-2">
+                    <span>微信公众平台</span>
+                    <img class="tdcode" src="images/tdcode.jpg">
+                </div>
         </div>
-        <div class="copyright">Copyright © 2015 </div>
-        <div class="clear"></div>
+        <div class=" row copyright">Copyright © 2015 </div>
 
     </footer>
-</div>
+<script src="js/bootstrap.js"></script>
 </body>
 </html>
