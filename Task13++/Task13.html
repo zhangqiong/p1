@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
     <meta http-equiv="x-ua-compatible" content="IE=edge">
-    <!--<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>-->
-    <script src="js/jquery.min.js"></script>
-    <!--<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <!--<script src="js/jquery.min.js"></script>-->
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
     <link rel="stylesheet" href="css/Task13.css">
     <link rel="stylesheet" href="css/base.css">
     <title></title>
@@ -53,7 +53,7 @@
             </div>
         </div>
     </nav>
-    <div id="maincarousel" class="carousel">
+    <div id="maincarousel" class="carousel slide">
         <!--indicators-->
         <ol class="carousel-indicators">
             <li data-target="#maincarousel" data-slide-to="0" class="active"></li>
@@ -120,10 +120,10 @@
                     <div class="peo-count-content">
                         <span class="icon"></span>
                         12400<br>
-                        累计在线学习人数<br>
+                        <span class="text">累计在线学习人数</span> <br>
                         <span class="icon"></span>
                         12400<br>
-                        学员已找到满意工作
+                        <span class="text">学员已找到满意工作</span>
                     </div>
                 </div>
                 <div class="clear"></div>
@@ -213,7 +213,7 @@
                     <div class="stu shadow">
                         <span id="man1" class="icon photo"></span>
                         <h3>优秀学员：张晋佩【CSS】</h3>
-                        <p>
+                        <p class="text">
                             IT修真院让我学会了很多知识，积累了很多经验，结交了很多朋友。
                         </p>
                     </div>
@@ -223,7 +223,7 @@
                     <div class="stu shadow">
                         <span id="wman1" class="icon photo"></span>
                         <h3>优秀学员：张晋佩【CSS】</h3>
-                        <p>
+                        <p class="text">
                             IT修真院让我学会了很多知识，积累了很多经验，结交了很多朋友。
                         </p>
                     </div>
@@ -233,7 +233,7 @@
                     <div class="stu shadow ">
                         <span id="man2" class="icon photo"></span>
                         <h3>优秀学员：张晋佩【CSS】</h3>
-                        <p>
+                        <p class="text">
                             IT修真院让我学会了很多知识，积累了很多经验，结交了很多朋友。
                         </p>
                     </div>
@@ -243,7 +243,7 @@
                     <div class="stu shadow ">
                         <span id="wman2" class="icon photo"></span>
                         <h3>优秀学员：张晋佩【CSS】</h3>
-                        <p>
+                        <p class="text">
                             IT修真院让我学会了很多知识，积累了很多经验，结交了很多朋友。
                         </p>
                     </div>
@@ -279,10 +279,11 @@
 
     </div>
 
-    <footer class="container-fluid mainfooter ">
 
-        <div class="row friendlink">
-            <div class="friendlink-content">
+
+    <div class="friendlink-wrapper">
+        <div class="container friendlink">
+            <div class="row friendlink-content">
                 <h5>友情链接</h5>
                 <ul>
                     <li><a>手机软件</a></li>
@@ -310,7 +311,10 @@
             </div>
 
         </div>
-        <div class="row contact">
+    </div>
+    <div class="contact-wrapper">
+        <div class="container">
+            <div class="row contact">
                 <ul class="col-sm-4">
                     <li class="slogan">技能树—改变你我</li>
                     <li>
@@ -332,10 +336,14 @@
                     <span>微信公众平台</span>
                     <img class="tdcode" src="images/tdcode.jpg">
                 </div>
+            </div>
         </div>
-        <div class=" row copyright">Copyright © 2015 </div>
+    </div>
+    <div class="copyright">Copyright © 2015 </div>
 
-    </footer>
-<script src="js/bootstrap.js"></script>
+
+
+
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>
