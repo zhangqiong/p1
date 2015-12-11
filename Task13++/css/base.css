@@ -112,7 +112,7 @@ address{
 }
 .friendlink li{
     color: #999;
-    width: 80px;
+    width: 100px;
     float: left;
 }
 .friendlink a{
@@ -121,7 +121,7 @@ address{
 .contact{
     background-color: #26a26f;
     color: #ffffff;
-    padding: 50px;
+    padding: 50px 0;
 }
 .contact a{
     color: #ffffff;
@@ -172,4 +172,10 @@ address{
     .slogan+li{
         margin-bottom: 2em;
     }
+}
+.friendlink-wrapper{
+    background-color: #fff;
+}
+.contact-wrapper{
+    background-color: #26a26f;
 }
