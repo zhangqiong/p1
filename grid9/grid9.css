@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+.block{
+    float: left;
+    margin:1.6666%;
+    width: 30%;
+    padding: 15%;
+    border-radius: 5%;
+    background-color: #ddd;
+}
+.red{
+    background-color: #F9C;
+}
+.green{
+    background-color: #CF6;
+}
+.blue{
+    background-color: #6cc;
+}
