@@ -1,22 +1,27 @@
 a:hover{
     text-decoration: none!important;
 }
+/*返回顶部的占位符*/
 #top_main{
     position: absolute;
 }
+/*返回顶部*/
 .to_top{
+    display: block;
     position: fixed;
     width: 50px;
     height: 50px;
     bottom: 50px;
     right: 0;
     z-index: 10;
+    color: white;
     background-color: #26a26f;
     text-align: center;
 }
-.to_top a{
-    color: white;
+.to_top:hover{
+    color: #ffffff;
 }
+/*面包屑*/
 .trace{
     height:100px;
     line-height: 100px;
@@ -28,6 +33,7 @@ a:hover{
 .trace a:last-child{
     color: #26a26f;
 }
+/*选择方向*/
 .direction{
     padding: 40px 0;
     border-bottom: solid lightgray 1px;
@@ -40,15 +46,17 @@ a:hover{
     background-color: #26a26f;
     color: white;
 }
+/*主体标题的设定*/
 h2{
     clear: both;
     line-height: 100px;
 }
+/*分割线*/
 hr{
     color: lightgray;
 }
 
-
+/*卡片*/
 .card{
     max-width: 380px;
     height: 390px;
@@ -125,7 +133,7 @@ hr{
     float: left;
     padding-left: 1rem;
     line-height: 1.8rem;
-    font-size: .6rem;
+    font-size: 1rem;
     color: gray;
 }
 .guy{
@@ -137,10 +145,20 @@ hr{
   background-image: url('../img/mysprite.png');
   background-position: left -962px;
 }
+@media(max-width: 390px){
+    .guy{
+        margin:5px;
+    }
+    .intro h3{
+        line-height: 1rem!important;
+        font-size: 1.1em!important;
+        margin-top:5px!important;
+    }
+}
 .intro{
     height: 139px;
     margin: 18px;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 .intro h3{
     line-height: 2rem;

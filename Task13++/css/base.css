@@ -3,11 +3,13 @@ body{
     font-family: "Microsoft YaHei","Helvetica Neue",  Helvetica, Arial, sans-serif;
 
 }
+html{-webkit-text-size-adjust:none;}
 a{
     cursor:pointer;
 }
 .header{
-    font-size: .7rem;
+    /*font-size: .7rem;*/
+    padding: 0 5px;
     background-color: #ffffff;
 }
 .header .row{
@@ -15,7 +17,9 @@ a{
     line-height: 40px;
     color: #26a26f;
 }
-
+address{
+    font-style: normal;
+}
 .login{
     float: right;
     text-align: right;
@@ -23,15 +27,23 @@ a{
 .login a{
     color: #26a26f;
     text-decoration: none;
+
 }
 .login .icon{
     display: inline-block;
     vertical-align: middle;
     width: 25px;
     height: 24px;
+    margin-right: 1em;
 }
-address{
-    font-style: normal;
+
+@media(max-width: 400px){
+    .login .icon{
+        margin-right: 0;
+    }
+    .header{
+        font-size: .9rem;
+    }
 }
 #wechat{
   background-image: url('../img/mysprite.png');
@@ -103,6 +115,9 @@ address{
         line-height: 50px!important;
     }
 }
+.friendlink-wrapper{
+    background-color: #fff;
+}
 .friendlink{
     background-color: #ffffff;
     padding-bottom: 10px;
@@ -118,10 +133,19 @@ address{
 .friendlink a{
     color: #999;
 }
+.contact-wrapper{
+    background-color: #26a26f;
+}
+
 .contact{
     background-color: #26a26f;
     color: #ffffff;
     padding: 50px 0;
+}
+@media (max-width: 345px){
+    .row.contact{
+        padding: 10px;
+    }
 }
 .contact a{
     color: #ffffff;
@@ -146,6 +170,14 @@ address{
 .slogan{
     margin-bottom: 5.4em;
 }
+@media (max-width: 768px){
+    .slogan{
+        margin-bottom: .4em;
+    }
+    .slogan+li{
+        margin-bottom: 2em;
+    }
+}
 .copyright{
     background-color: #26a26f;
     border-top: #32c086 solid 1px;
@@ -160,22 +192,7 @@ address{
     white-space: nowrap;
     overflow: visible;
 }
-@media (max-width: 345px){
-    .row.contact{
-        padding: 10px;
-    }
-}
-@media (max-width: 768px){
-    .slogan{
-        margin-bottom: .4em;
-    }
-    .slogan+li{
-        margin-bottom: 2em;
-    }
-}
-.friendlink-wrapper{
-    background-color: #fff;
-}
-.contact-wrapper{
-    background-color: #26a26f;
+
+.text{
+    color: #999999!important;
 }

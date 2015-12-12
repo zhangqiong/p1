@@ -1,3 +1,13 @@
+/*宽条广告*/
+.banner{
+    width: 100%;
+}
+@media (max-width: 768px){
+    .banner{
+        display: none;
+    }
+}
+/*主体容器*/
 .article-wrapper{
     margin: 80px auto;
 }
@@ -6,6 +16,7 @@
     background-color: #fff;
     border-radius: 5px;
 }
+/*侧面选项*/
 .aside-main{
     padding-right: 25px;
 }
@@ -40,6 +51,7 @@
 .aside-main .chosen .icon{
     background-color: #f9a372;
 }
+/*文章*/
 .article-main .co-logo{
     display: block;
     float: left;
@@ -84,11 +96,4 @@
     }
 
 }
-.banner{
-    width: 100%;
-}
-@media (max-width: 768px){
-    .banner{
-        display: none;
-    }
-}
+
