@@ -1,114 +1,148 @@
+
+#card6{
+    margin-top: 120px;
+}
 body,html{
-    font-size: 5vmin;
-    background-color: gray;
-    font-family:sans-serif;
+    font-size: 10px;
+    font-family: "Microsoft YaHei","Helvetica Neue",  Helvetica, Arial, sans-serif;
+
 }
 table{
     border-collapse: collapse;
     border-spacing: 0;
 }
 *{
-    padding:0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     margin:0;
-    color: lightgray;
+    color: gray;
+}
+a{
+    text-decoration: none;
 }
 .container{
     position: absolute;
     left:0;
     top:0;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    width: 100%;
+    /*overflow: hidden;*/
 }
-h2{
-    font-size: 0.5rem;
+nav{
+    /*position: relative;*/
+    padding: 20px;
+    padding-bottom: 0;
+    width: 100px;
+    /*overflow-y: scroll;*/
 }
-p{
-    color: gray;
-    font-size:0.3rem;
+.line{
+    float: left;
+    height:720px;
+    width: 10px;
+    margin: auto 5px;
+    background-color: #ffffff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
-.link_to a{
-    font-size: 0.4rem;
-    color: gray;
+.left,
+.right{
+    width: 120px;
+    float: left;
 }
+/*.right{*/
+    /*margin-left: 20px;*/
+/*}*/
 
-a{
-    text-decoration: none;
+.card{
+    position: relative;
+    width: 120px;
+    padding: 10px;
+    margin-top: 40px;
+    background-color: #ffffff;
+    font-size: 2rem;
+    border-radius: 5px;
 }
-a:hover{
+.arrow{
+    position: absolute;
+    top:40%;
+    width: 0;
+    height: 0;
+    border:5px solid transparent;
+
+}
+.left .arrow{
+    left: 120px;
+    border-left:5px solid #ffffff;
+}
+.right .arrow{
+    left: -10px;
+    border-right:5px solid #ffffff;
+}
+.link-to{
+    /*position: absolute;*/
+    /*bottom:20px;*/
+    /*left: 20px;*/
+    width: 120px;
+    margin-top: 40px;
+}
+.link-to a:hover{
     text-decoration: underline;
 }
-@media screen and (max-device-aspect-ratio: 1/1){
-    #__01{
-        display: none;
-    }
-    .container{
-        background-color: #99CC33;
-    }
-    /*#__02{*/
-        /*font-size: 0;*/
-        /*position: absolute;*/
-        /*left:50%;*/
-        /*top:50%;*/
-        /*width: 1000px;*/
-        /*height: 1777px;*/
-        /*margin:-900px 0 0 -500px;*/
-    /*}*/
-    nav{
-        position: fixed;
-        bottom: 0;
-        height: 30vh;
-        width: 100vw;
-        background-color: rgba(0,0,0,0.6);
-        overflow: hidden;
-    }
-    .mobile,
-    .desktop{
-        width: 33vw;
-        float: left;
-        overflow: hidden;
-    }
-    .mobile a,
-    .desktop a{
-        display: block;
-        width:auto;
-        margin-left: 12vmin;
-    }
-    p{
-        color: gray;
-        font-size:0.5rem;
-    }
-    .link_to a{
-        font-size: 0.8rem;
-        color: gray;
-    }
+#cardr,
+#cardb{
+    color: #ffffff;
+    background-color: gray;
 }
-@media screen and (min-device-aspect-ratio: 1/1){
-    #__02{
-        display: none;
-    }
-    #__01{
-        font-size: 0;
-        position: absolute;
-        left:50%;
-        top:30%;
-        width: 1599px;
-        height: 900px;
-        margin:-300px 0 0 -800px;
-    }
-    nav{
-        position: fixed;
-        width: 30vmin;
-        height: 100vh;
-        background-color: rgba(0,0,0,0.6);
-        overflow: hidden;
-    }
-    .mobile a,
-    .desktop a{
-        display: block;
-        width:30vmin;
-        margin-left: 12vmin;
-        overflow: hidden;
-    }
+#cardb h6{
+    color: #ffffff;
+}
+#cardr .arrow
+{
+    border-right-color: gray;
+}
+#cardb .arrow{
+    border-left-color: gray;
 }
 
+#__01{
+    font-size: 0;
+    position: absolute;
+    left:50%;
+    top:30%;
+    width: 1599px;
+    height: 900px;
+    margin:-300px 0 0 -800px;
+}
+@media screen and (min-aspect-ratio: 1/1){
+
+    body{
+        background-image: url("images/b_w2.jpg");
+        background-position: 50% 30%;
+        background-attachment: fixed;
+    }
+    nav{
+        position: absolute;
+        width: 320px;
+        /*height: 100vh;*/
+        background-color: rgba(0,0,0,0.6);
+        overflow: auto;
+    }
+
+}
+@media screen and (max-aspect-ratio: 1/1){
+    #__01{
+        display: none;
+    }
+    body{
+        background-color: rgba(0,0,0,0.6);
+    }
+    nav{
+        position: static;
+        /*height: 100vh;*/
+        overflow: auto;
+        width: 320px;
+        margin: auto;
+        background-color: transparent;
+
+    }
+}
