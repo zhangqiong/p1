@@ -9,10 +9,10 @@ a{
 }
 .header{
     /*font-size: .7rem;*/
-    padding: 0 5px;
     background-color: #ffffff;
 }
 .header .row{
+    padding: 0 5px;
     height: 40px;
     line-height: 40px;
     color: #26a26f;
