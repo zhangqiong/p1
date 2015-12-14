@@ -55,5 +55,11 @@ function scrollFunc(e){
 if(document.addEventListener){
     document.addEventListener('DOMMouseScroll',scrollFunc,true);
 }
-window.onmousewheel=scrollFunc;
+//else if(document.attachEvent){
+//    document.attachEvent('onmousewheel',scrollFunc);
+//}
+//else{
+    window.onmousewheel=scrollFunc;
+//}
+
 
