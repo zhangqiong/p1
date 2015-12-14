@@ -1,0 +1,73 @@
+
+.container{
+    /*max-width: 768px;*/
+    width: 100%;
+    height: 100vh;
+    /*margin: auto;*/
+    padding-bottom: 1px;
+    background-color: #29bde0;
+    color: #fff;
+}
+.header{
+    height: 8.2%;
+    border-bottom: solid 1px #74d4eb;
+    text-align: center;
+    line-height: 1.1em;
+}
+.round.num{
+    display: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    position: relative;
+    top:-0.75rem;
+    margin: auto;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: solid 3px  #ffedc5;
+    background-color: #fff;
+    line-height: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #f56b81;
+}
+.wrapper{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border:solid 6px;
+    width: 72.5%;
+    height: 57.6%;
+    margin: auto;
+    margin-top: 7.4%;
+    /*margin-bottom: 186px;*/
+    background-color: #ffedc5;
+    font-size: 0.7rem;
+}
+.main{
+
+}
+.fanpai{
+    display: block;
+    width: 4.68rem;
+    margin: auto;
+    vertical-align: middle;
+}
+button.footer {
+    /*position: fixed;*/
+    /*bottom:0;*/
+    display: block;
+    width: 76.5%;
+    /*max-width: 588px;*/
+    height: 7.5%;
+    margin: 4.4% auto;
+    background-color: #fbb435;
+    color: #fff;
+    font-size: 0.8rem;
+}
+@media (min-width:992px){
+    .container{
+        width: 768px;
+    }
+}
