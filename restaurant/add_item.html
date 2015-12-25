@@ -5,9 +5,21 @@
     <title>增加商品</title>
 </head>
 <body>
-<form>
-    商品号：<input type="text"><br>
-    商品名：<input type="text">
+<form action="php/add_item.php" method="post">
+
+    商品名：<input name="name" type="text"> <br>
+    单位：<input name="unit" type="text"><br>
+    单价：<input name="price" type="text"><br>
+    余量：<input name="amount" type="text"><br>
+    种类：<select>
+    <option value="11">热菜素</option>
+    <option value="12">热菜荤</option>
+    <option value="21">凉菜素</option>
+    <option value="22">凉菜荤</option>
+    <option value="3">汤</option>
+    <option value="4">主食</option>
+    <option value="5">饮料</option>
+</select><br>
     <input type="submit" value="添加">
 </form>
 </body>

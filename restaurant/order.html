@@ -6,21 +6,24 @@
 </head>
 <body>
 <article>
-    <form class="order">
-        桌台号：<input name="tb-num" type="text">
+    <form class="order" action="php/order.php" method="post" onsubmit="return clear_form()">
+        桌台号：<input name="tb_num" type="text">
         <table id="dishes_list">
             <tr>
                 <td>商品号</td>
                 <td>数量</td>
             </tr>
-            <tr  onclick="addDash()">
-                <td><input type="text" name="item1"></td>
-                <td><input type="number" name="num1"></td>
+            <tr>
+                <td><input class="dish_num" type="text" name="item0"  onclick="addDash()"></td>
+                <td><input type="number" name="num0" value="1"></td>
             </tr>
         </table>
         <input type="submit" value="下单">
     </form>
 </article>
-<script src="js/order.js"></script>
+<script>
+    document.write("<script src='js/order.js?t="+Math.random()+"'></sc"+"ript>")
+</script>
+<!--<script src="js/order.js"></script>-->
 </body>
 </html>

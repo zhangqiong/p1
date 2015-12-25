@@ -5,7 +5,8 @@
     <title>结账</title>
 </head>
 <body>
-    桌号:<input type="text"><br>
+    桌号:<input id="tb_num" type="text">
+    <button id="set_tb_num">确定</button>
     <br>
     <table>
         <thead>账单</thead>
@@ -21,6 +22,10 @@
     <button>刷卡</button>
     <button>会员余额</button>
 <div id="pay_way"></div>
-<script src="js/pay.js"></script>
+    <script>
+        document.write('<script src="js/pay.js?t='+Math.random()+'"></scr'+'ipt>');
+        console.log('<script src="js/pay.js?t='+Math.random()+'"></scr'+'ipt>');
+    </script>
+
 </body>
 </html>

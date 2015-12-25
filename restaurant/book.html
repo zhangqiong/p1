@@ -6,14 +6,41 @@
 </head>
 <body>
 <article class="book">
-    <form class="book" action="">
-        客户电话：<input type="text" name="tel"><br>
-        客户称呼：<input type="text" name="name"><br>
-        预定时间：<input type="text" name="time"><br>
+    <form class="book" action="php/book.php" method="post" onsubmit="return checkform(this)">
+        预定时间：<input type="radio" name="date" value="today">今天
+        <input type="radio" name="date" value="tomorrow">明天
+        <input type="radio" name="date" value="other">输入日期
+        <!--<input type="date" name="date">-->
+        <br>
+        时间：<input type="time" name="time">
+        <br>
         预定人数：<input type="text" name="peo_num"><br>
-        预定桌号：<input type="text" name="table_num"><br>
-        <input type="submit" value="提交">
+        预定桌号：<input type="text" name="tb_id"><br>
+        客户称呼：<input type="text" name="cus_name"><br>
+        客户电话：<input type="text" name="tel"><br>
+        <input type="submit" value="确定">
+        <!--<input type="submit" value="不点餐，只订桌">-->
     </form>
 </article>
+<script>
+    function checkform(form){
+        var day=new Date();
+        with(form){
+//            console.log(date.value);
+//            if (date.value=="today"){
+//                date.=day.toLocaleDateString();
+//                console.log(date.value,day.toLocaleDateString());
+//            }else if(date.value=="tomorrow"){
+//                day.setDate(day.getDate()+1);
+//                date.value=day.toLocaleDateString();
+//                console.log(date.value,day.toLocaleDateString());
+//            }
+
+        }
+//        return false;
+    }
+    document.write('<script src="js/verification.js?t='+Math.random()+'"></sc'+'ript>')
+</script>
+
 </body>
 </html>

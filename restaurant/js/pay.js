@@ -1,10 +1,27 @@
 /**
  * Created by zq on 2015/11/29.
  */
+var set_tb_num=document.getElementById("set_tb_num");
+var tb_num=document.getElementById("tb_num");
 var payway=document.getElementById("pay_way");
 var cpCount=0;
 var cdCount=0;
 var mbCount=0;
+set_tb_num.onclick=getBill;
+function getBill(){
+    console.log(tb_num.value);
+    var xmlhttp;
+    if(window.XMLHttpRequest){
+        xmlhttp=new XMLHttpRequest();
+    }else{
+        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP")
+    }
+    xmlhttp.open("POST","php/bill.php?t="+Math.random(),false);
+    xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+    xmlhttp.send("tb_num="+tb_num.value);
+    console.log(xmlhttp.responseText) ;
+
+}
 function cashPay(){
     var form=document.createElement("form");
     var text1=document.createTextNode("收款：");
